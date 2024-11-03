@@ -1,0 +1,1 @@
+tellraw @s ["",{"text": "[system]","color": "yellow"},{"storage":"core:message","nbt":"msg","interpret": true}]

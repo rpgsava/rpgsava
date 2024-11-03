@@ -1,0 +1,1 @@
+execute as @e[tag=firstPlainsZombie] at @s run function mobs:first_plain/zombies/_tick

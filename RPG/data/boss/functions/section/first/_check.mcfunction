@@ -1,0 +1,1 @@
+execute as @e[tag=firstPlainsBoss] at @s run function boss:section/first/first_plains/boss_instance/_tick

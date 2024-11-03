@@ -1,0 +1,1 @@
+scoreboard players operation @s Core.Lv.Xp.Now.Mana += $Mana_Xp Core.Lv.Xp.Now.Mana

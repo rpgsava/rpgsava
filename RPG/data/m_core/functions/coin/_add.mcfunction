@@ -1,0 +1,1 @@
+scoreboard players operation @s Players.Coin += $GainCoin Core.Coin

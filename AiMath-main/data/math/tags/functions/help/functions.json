@@ -1,0 +1,21 @@
+{
+	"replace": false,
+	"values": [
+		"math:help/sin",
+		"math:help/cos",
+		"math:help/tan",
+		"math:help/sqrt",
+		"math:help/random",
+		"math:help/dice",
+		"math:help/maze",
+		"math:help/clock",
+		"math:help/motion",
+		"math:help/sort",
+		"math:help/randomize",
+		"math:help/split_number",
+		"math:help/float",
+		"math:help/tick2time",
+		"math:help/tick2time2",
+		"math:help/length"
+	]
+}

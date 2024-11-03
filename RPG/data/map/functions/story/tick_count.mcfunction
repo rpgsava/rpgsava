@@ -1,0 +1,1 @@
+execute as @a[tag=Story.ForestOfWindCreation] at @s run function map:story/forest_of_wind_creation/every

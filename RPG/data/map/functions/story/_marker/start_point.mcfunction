@@ -1,0 +1,1 @@
+data modify entity @s Tags set from storage map:story Tags

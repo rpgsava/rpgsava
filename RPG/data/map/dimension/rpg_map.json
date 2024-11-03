@@ -1,0 +1,14 @@
+{
+  "ambient_light": 1.0,
+  "type": "map:rpg_map",
+  "generator": {
+    "type": "minecraft:flat",
+    "settings": {
+      "biome": "minecraft:plains",
+      "lakes": false,
+      "features": false,
+      "layers": [],
+      "structure_overrides": []
+    }
+  }
+}

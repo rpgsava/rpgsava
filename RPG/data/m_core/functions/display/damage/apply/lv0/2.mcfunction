@@ -1,0 +1,2 @@
+execute if score @s Core.Health.Ratio matches 5 run data modify entity @s CustomName set value '[{"text":"█▎","color":"red"},{"text":"▊████████","color":"dark_gray"}]'
+execute if score @s Core.Health.Ratio matches 6 run data modify entity @s CustomName set value '[{"text":"█▌","color":"red"},{"text":"▌████████","color":"dark_gray"}]'
