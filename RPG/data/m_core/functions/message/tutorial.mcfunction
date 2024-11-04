@@ -1,2 +1,0 @@
-tellraw @s ["",{"text": "[tutorial]","color": "yellow"},{"text":"⇨","color":"green","bold":true},{"storage":"core:message","nbt":"title","interpret": true},"\n",{"storage":"core:message","nbt":"msg","interpret": true}]
-playsound entity.experience_orb.pickup master @s ~ ~ ~ 1 1.2

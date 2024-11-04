@@ -1,2 +1,0 @@
-for i in range(15):
-    print(f"execute if score @s Map.Story.Now matches {str(300 + i)} if entity @e[type=item_display,tag=Story.RoadOfToBigForest.{i},distance = ..5] run function map:story/road_of_to_big_forest/event/marker_{i}")
