@@ -15,8 +15,8 @@ data modify entity @s NoAI set value true
 effect give @s invisibility infinite 0 true
 
 #アイテムをドロップ
-summon item ~ ~0.5 ~ {PickupDelay:500,Item:{Count:1b,id:"minecraft:lapis_block",tag:{Enchantments:[{}]}},Age:5900,Tags:["InsertVector"]}
-summon item ~ ~0.5 ~ {PickupDelay:500,Item:{Count:1b,id:"minecraft:gold_nugget"},Age:5900,Tags:["InsertVector"]}
+summon item ~ ~0.5 ~ {PickupDelay:500,Item:{count:1b,id:"minecraft:lapis_block",components: {"minecraft:enchantment_glint_override": 1b}},Age:5900,Tags:["InsertVector"]}
+summon item ~ ~0.5 ~ {PickupDelay:500,Item:{count:1b,id:"minecraft:gold_nugget"},Age:5900,Tags:["InsertVector"]}
 #アイテムにVectorを代入する
 execute as @e[tag=InsertVector] at @s run function m_core:libs/item/in_vector
 tag @e[tag=InsertVector] remove InsertVector
