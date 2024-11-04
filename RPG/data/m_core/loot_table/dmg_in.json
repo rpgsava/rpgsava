@@ -9,7 +9,9 @@
                     "functions": [
                         {
                             "function": "minecraft:set_name",
+
                             "entity": "this",
+                            "target": "item_name",
                             "name": {
                                 "score": {
                                     "name": "$dmg",
@@ -21,6 +23,7 @@
                         {
                             "function": "minecraft:set_name",
                             "entity": "this",
+                            "target": "item_name",
                             "name": {
                                 "score": {
                                     "name": "$dmg",
@@ -44,6 +47,7 @@
                         {
                             "function": "minecraft:set_name",
                             "entity": "this",
+                            "target": "item_name",
                             "name": {
                                 "score": {
                                     "name": "$dmg",
