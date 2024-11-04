@@ -17,7 +17,7 @@ scoreboard objectives add Core.Lv.Xp.Need.Mana dummy
 scoreboard objectives add Core.Lv.Xp.Need.Speed dummy
 
 scoreboard objectives add Core.Health dummy
-scoreboard objectives setdisplay belowName Core.Health
+scoreboard objectives setdisplay below_name Core.Health
 
 scoreboard objectives add Core.Bool dummy
 scoreboard players set $False Core.Bool 0
