@@ -1,5 +1,4 @@
 {
-  "ambient_light": 1.0,
   "type": "map:rpg_map",
   "generator": {
     "type": "minecraft:flat",
