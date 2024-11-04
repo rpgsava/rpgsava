@@ -1,9 +1,0 @@
-{
-	"values": [
-		"m_core:tick",
-		"mobs:tick",
-		"players:tick",
-		"map:tick",
-		"boss:tick"
-	]
-}

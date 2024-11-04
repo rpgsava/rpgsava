@@ -1,0 +1,10 @@
+{
+	"values": [
+		"m_core:load",
+		"mobs:load",
+		"players:load",
+		"map:load",
+		"boss:load",
+		"item:load"
+	]
+}
