@@ -16,7 +16,7 @@ advancement revoke @s only players:hit/player_to_mobs
 
 #ダメージ計算
     function players:_damage/calc_player_damage
-
+    
 #ダメージ入力
     tag @s add Attack.Now
     #殴ったモブを特定

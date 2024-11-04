@@ -17,3 +17,4 @@ data merge entity @s {HurtByTimestamp:0}
 #もし、HPが0を下回り、死亡判定なら
     execute if score @s[tag=!Boss] Mobs.Health.Now matches ..0 at @s run function mobs:_death
     execute if score @s[tag=Boss] Mobs.Health.Now matches ..0 at @s run function boss:_death/_
+    

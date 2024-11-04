@@ -6,7 +6,7 @@ data modify storage item: items[-1].Slot set value 0b
 data modify block 0 0 0 Items[{Slot:0b}] set from storage item: items[-1]
 #TODOモブドロップによるものなら直接 0 0 0 に書き込まれたものにset_loreするので不要
 #一旦nbtを浅くしておく
-data modify storage item: dat set from block 0 0 0 Items[0].tag
+data modify storage item: dat set from block 0 0 0 Items[0].components."minecraft:custom_data"
 #データをスコアに書き出し
 execute store result score $Damage Item.Data run data get storage item: dat.RPG.Damage
 execute store result score $ArrowDamage Item.Data run data get storage item: dat.RPG.ArrowDamage

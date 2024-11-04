@@ -2,6 +2,7 @@
     {
         "comment": "武器に説明があればそれを記載する",
         "function": "minecraft:set_lore",
+        "mode": "append",
         "entity": "this",
         "lore": [
             [
@@ -19,6 +20,7 @@
     },
     {
         "function": "minecraft:set_lore",
+        "mode": "append",
         "lore": [
             [
                 {
@@ -35,6 +37,7 @@
     {
         "comment": "攻撃力が存在すれば攻撃力を明記する",
         "function": "minecraft:set_lore",
+        "mode": "append",
         "entity": "this",
         "lore": [
             [
@@ -51,7 +54,7 @@
                         "objective": "Item.Data",
                         "name": "$Damage"
                     },
-                    "color":"aqua"
+                    "color": "aqua"
                 }
             ]
         ],
@@ -75,6 +78,7 @@
     {
         "comment": "広域攻撃力が存在すれば攻撃力を明記する",
         "function": "minecraft:set_lore",
+        "mode": "append",
         "entity": "this",
         "lore": [
             [
@@ -91,7 +95,7 @@
                         "name": "$ArrowDamage",
                         "objective": "Item.Data"
                     },
-                    "color":"aqua"
+                    "color": "aqua"
                 }
             ]
         ],
@@ -115,6 +119,7 @@
     {
         "comment": "魔法攻撃力が存在すれば攻撃力を明記する",
         "function": "minecraft:set_lore",
+        "mode": "append",
         "entity": "this",
         "lore": [
             [
@@ -131,7 +136,7 @@
                         "objective": "Item.Data",
                         "name": "$MasicDamage"
                     },
-                    "color":"aqua"
+                    "color": "aqua"
                 }
             ]
         ],
@@ -155,6 +160,7 @@
     {
         "comment": "マナが存在すればマナを明記する",
         "function": "minecraft:set_lore",
+        "mode": "append",
         "entity": "this",
         "lore": [
             [
@@ -171,7 +177,7 @@
                         "objective": "Item.Data",
                         "name": "$Mana"
                     },
-                    "color":"aqua"
+                    "color": "aqua"
                 }
             ]
         ],
@@ -195,6 +201,7 @@
     {
         "comment": "体力が存在すれば体力を明記する",
         "function": "minecraft:set_lore",
+        "mode": "append",
         "entity": "this",
         "lore": [
             [
@@ -211,7 +218,7 @@
                         "objective": "Item.Data",
                         "name": "$Health"
                     },
-                    "color":"aqua"
+                    "color": "aqua"
                 }
             ]
         ],
@@ -235,6 +242,7 @@
     {
         "comment": "防御力が存在すれば防御力を明記する",
         "function": "minecraft:set_lore",
+        "mode": "append",
         "entity": "this",
         "lore": [
             [
@@ -251,7 +259,7 @@
                         "objective": "Item.Data",
                         "name": "$Defence"
                     },
-                    "color":"aqua"
+                    "color": "aqua"
                 }
             ]
         ],
@@ -274,6 +282,7 @@
     },
     {
         "function": "minecraft:set_lore",
+        "mode": "append",
         "lore": [
             [
                 {
@@ -289,6 +298,7 @@
     },
     {
         "function": "minecraft:set_lore",
+        "mode": "append",
         "entity": "this",
         "lore": [
             [
@@ -303,14 +313,15 @@
                 {
                     "storage": "item:",
                     "nbt": "Rarelity",
-                    "color":"yellow"
+                    "color": "yellow"
                 }
             ]
         ]
     },
     {
-        "comment":"ショップアイテムであれば必要コインを書き込む",
+        "comment": "ショップアイテムであれば必要コインを書き込む",
         "function": "minecraft:set_lore",
+        "mode": "append",
         "entity": "this",
         "lore": [
             [
@@ -348,8 +359,11 @@
         ]
     },
     {
-        "comment":"hideflagを全てに適応",
-        "function": "minecraft:set_nbt",
-        "tag": "{HideFlags:255,Unbreakable:1b}"
+        "function": "minecraft:set_components",
+        "components": {
+            "minecraft:unbreakable": {
+                "show_in_tooltip": false
+            }
+        }
     }
 ]
