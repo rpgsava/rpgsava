@@ -20,12 +20,12 @@ execute if score $isCatch17 Core.Shop.IsExistItem matches 1 run return -3
 
 
 # もし、n番目のスロットが元々存在していて、n番のスロットが無くなっていればコインがあるかを判定し、購入に移行する(コインチェック->アイテムを0 0 0にコピー->共通関数:(コイン減算->loot))
-execute if data storage core:shop exist.10 unless data entity @s Items[{Slot:10b}] run execute on passengers run data modify block 0 0 0 Items[] set from entity @s data.Others[{Slot:10b}]
-execute if data storage core:shop exist.11 unless data entity @s Items[{Slot:11b}] run execute on passengers run data modify block 0 0 0 Items[] set from entity @s data.Others[{Slot:11b}]
-execute if data storage core:shop exist.12 unless data entity @s Items[{Slot:12b}] run execute on passengers run data modify block 0 0 0 Items[] set from entity @s data.Others[{Slot:12b}]
-execute if data storage core:shop exist.13 unless data entity @s Items[{Slot:13b}] run execute on passengers run data modify block 0 0 0 Items[] set from entity @s data.Others[{Slot:13b}]
-execute if data storage core:shop exist.14 unless data entity @s Items[{Slot:14b}] run execute on passengers run data modify block 0 0 0 Items[] set from entity @s data.Others[{Slot:14b}]
-execute if data storage core:shop exist.15 unless data entity @s Items[{Slot:15b}] run execute on passengers run data modify block 0 0 0 Items[] set from entity @s data.Others[{Slot:15b}]
+execute if data storage core:shop exist.10 unless data entity @s Items[{Slot:10b}] on passengers run data modify block 0 0 0 Items[] set from entity @s data.Others[{Slot:10b}]
+execute if data storage core:shop exist.11 unless data entity @s Items[{Slot:11b}] on passengers run data modify block 0 0 0 Items[] set from entity @s data.Others[{Slot:11b}]
+execute if data storage core:shop exist.12 unless data entity @s Items[{Slot:12b}] on passengers run data modify block 0 0 0 Items[] set from entity @s data.Others[{Slot:12b}]
+execute if data storage core:shop exist.13 unless data entity @s Items[{Slot:13b}] on passengers run data modify block 0 0 0 Items[] set from entity @s data.Others[{Slot:13b}]
+execute if data storage core:shop exist.14 unless data entity @s Items[{Slot:14b}] on passengers run data modify block 0 0 0 Items[] set from entity @s data.Others[{Slot:14b}]
+execute if data storage core:shop exist.15 unless data entity @s Items[{Slot:15b}] on passengers run data modify block 0 0 0 Items[] set from entity @s data.Others[{Slot:15b}]
 
 data modify block 0 0 0 Items[0].Slot set value 0b
 

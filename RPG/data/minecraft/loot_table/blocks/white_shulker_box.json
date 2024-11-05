@@ -30,11 +30,11 @@
                                     "source": "block_entity"
                                 },
                                 {
-                                    "function": "minecraft:copy_nbt",
+                                    "function": "minecraft:copy_custom_data",
                                     "source": "block_entity",
                                     "ops": [
                                         {
-                                            "source": "Lock",
+                                            "source": "lock",
                                             "target": "BlockEntityTag.Lock",
                                             "op": "replace"
                                         },

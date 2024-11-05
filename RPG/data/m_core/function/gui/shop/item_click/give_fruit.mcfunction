@@ -20,12 +20,12 @@ execute if score $isCatch17 Core.Shop.IsExistItem matches 1 run return -3
 
 
 # 複数の取引がある場合は元々の数と現在の数が違うかを比較する
-execute store result score $10 Core.Shop.IsExistItem run data get storage core:shop exist.10.Count
-execute store result score $11 Core.Shop.IsExistItem run data get storage core:shop exist.11.Count
-execute store result score $12 Core.Shop.IsExistItem run data get storage core:shop exist.12.Count
-execute store result score $13 Core.Shop.IsExistItem run data get storage core:shop exist.13.Count
-execute store result score $14 Core.Shop.IsExistItem run data get storage core:shop exist.14.Count
-execute store result score $15 Core.Shop.IsExistItem run data get storage core:shop exist.15.Count
+execute store result score $10 Core.Shop.IsExistItem run data get storage core:shop exist.10.count
+execute store result score $11 Core.Shop.IsExistItem run data get storage core:shop exist.11.count
+execute store result score $12 Core.Shop.IsExistItem run data get storage core:shop exist.12.count
+execute store result score $13 Core.Shop.IsExistItem run data get storage core:shop exist.13.count
+execute store result score $14 Core.Shop.IsExistItem run data get storage core:shop exist.14.count
+execute store result score $15 Core.Shop.IsExistItem run data get storage core:shop exist.15.count
 execute store result score $10_ Core.Shop.IsExistItem run data get entity @s Items[{Slot:10b}].count
 execute store result score $11_ Core.Shop.IsExistItem run data get entity @s Items[{Slot:11b}].count
 execute store result score $12_ Core.Shop.IsExistItem run data get entity @s Items[{Slot:12b}].count

@@ -34,24 +34,24 @@ function m_core:gui/shop/item_click/set_weapons
 function m_core:gui/shop/item_click/set_all_shopitemtag
 tag @s remove Shop.Minecart.SetItemNow
 #まわりのガラスをセット
-item replace entity @s container.0 with black_stained_glass_pane 1
-item replace entity @s container.1 with black_stained_glass_pane 1
-item replace entity @s container.2 with black_stained_glass_pane 1
-item replace entity @s container.3 with black_stained_glass_pane 1
-item replace entity @s container.4 with black_stained_glass_pane 1
-item replace entity @s container.5 with black_stained_glass_pane 1
-item replace entity @s container.6 with black_stained_glass_pane 1
-item replace entity @s container.7 with black_stained_glass_pane 1
-item replace entity @s container.8 with black_stained_glass_pane 1
-item replace entity @s container.18 with black_stained_glass_pane 1
-item replace entity @s container.19 with black_stained_glass_pane 1
-item replace entity @s container.20 with black_stained_glass_pane 1
-item replace entity @s container.21 with black_stained_glass_pane 1
-item replace entity @s container.22 with black_stained_glass_pane 1
-item replace entity @s container.23 with black_stained_glass_pane 1
-item replace entity @s container.24 with black_stained_glass_pane 1
-item replace entity @s container.25 with black_stained_glass_pane 1
-item replace entity @s container.26 with black_stained_glass_pane 1
+item replace entity @s container.0 with black_stained_glass_pane[custom_data={ShopItem:true}] 1
+item replace entity @s container.1 with black_stained_glass_pane[custom_data={ShopItem:true}] 1
+item replace entity @s container.2 with black_stained_glass_pane[custom_data={ShopItem:true}] 1
+item replace entity @s container.3 with black_stained_glass_pane[custom_data={ShopItem:true}] 1
+item replace entity @s container.4 with black_stained_glass_pane[custom_data={ShopItem:true}] 1
+item replace entity @s container.5 with black_stained_glass_pane[custom_data={ShopItem:true}] 1
+item replace entity @s container.6 with black_stained_glass_pane[custom_data={ShopItem:true}] 1
+item replace entity @s container.7 with black_stained_glass_pane[custom_data={ShopItem:true}] 1
+item replace entity @s container.8 with black_stained_glass_pane[custom_data={ShopItem:true}] 1
+item replace entity @s container.18 with black_stained_glass_pane[custom_data={ShopItem:true}] 1
+item replace entity @s container.19 with black_stained_glass_pane[custom_data={ShopItem:true}] 1
+item replace entity @s container.20 with black_stained_glass_pane[custom_data={ShopItem:true}] 1
+item replace entity @s container.21 with black_stained_glass_pane[custom_data={ShopItem:true}] 1
+item replace entity @s container.22 with black_stained_glass_pane[custom_data={ShopItem:true}] 1
+item replace entity @s container.23 with black_stained_glass_pane[custom_data={ShopItem:true}] 1
+item replace entity @s container.24 with black_stained_glass_pane[custom_data={ShopItem:true}] 1
+item replace entity @s container.25 with black_stained_glass_pane[custom_data={ShopItem:true}] 1
+item replace entity @s container.26 with black_stained_glass_pane[custom_data={ShopItem:true}] 1
 
 #買うための枠があるか(27番目の枠が存在しない(0)or100以上ならあいている)
 execute store result score $myItems Core.Shop.IsExistItem run data get entity @a[tag=Shop.Practitioner,limit=1] Inventory[35].Slot
