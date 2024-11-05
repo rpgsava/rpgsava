@@ -1,5 +1,5 @@
 #一旦nbtを浅くしておく
-data modify storage item: dat set from block 0 0 0 Items[0].tag
+data modify storage item: dat set from block 0 0 0 Items[0].components."minecraft:custom_data"
 #データをスコアに書き出し
 execute store result score $Damage Item.Data run data get storage item: dat.RPG.Damage
 execute store result score $ArrowDamage Item.Data run data get storage item: dat.RPG.ArrowDamage
@@ -16,6 +16,5 @@ execute if score $Rarelity Item.Data matches 2 run data merge storage item: {Rar
 execute if score $Rarelity Item.Data matches 3 run data merge storage item: {Rarelity:"★★★☆☆"}
 execute if score $Rarelity Item.Data matches 4 run data merge storage item: {Rarelity:"★★★★☆"}
 execute if score $Rarelity Item.Data matches 5 run data merge storage item: {Rarelity:"★★★★★"}
-
 
 item modify block 0 0 0 container.0 item:set_lore

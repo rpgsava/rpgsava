@@ -36,24 +36,24 @@ function m_core:gui/shop/item_click/set_armors
 function m_core:gui/shop/item_click/set_all_shopitemtag
 tag @s remove Shop.Minecart.SetItemNow
 #まわりのガラスをセット
-item replace entity @s container.0 with black_stained_glass_pane{ShopItem:true} 1
-item replace entity @s container.1 with black_stained_glass_pane{ShopItem:true} 1
-item replace entity @s container.2 with black_stained_glass_pane{ShopItem:true} 1
-item replace entity @s container.3 with black_stained_glass_pane{ShopItem:true} 1
-item replace entity @s container.4 with black_stained_glass_pane{ShopItem:true} 1
-item replace entity @s container.5 with black_stained_glass_pane{ShopItem:true} 1
-item replace entity @s container.6 with black_stained_glass_pane{ShopItem:true} 1
-item replace entity @s container.7 with black_stained_glass_pane{ShopItem:true} 1
-item replace entity @s container.8 with black_stained_glass_pane{ShopItem:true} 1
-item replace entity @s container.18 with black_stained_glass_pane{ShopItem:true} 1
-item replace entity @s container.19 with black_stained_glass_pane{ShopItem:true} 1
-item replace entity @s container.20 with black_stained_glass_pane{ShopItem:true} 1
-item replace entity @s container.21 with black_stained_glass_pane{ShopItem:true} 1
-item replace entity @s container.22 with black_stained_glass_pane{ShopItem:true} 1
-item replace entity @s container.23 with black_stained_glass_pane{ShopItem:true} 1
-item replace entity @s container.24 with black_stained_glass_pane{ShopItem:true} 1
-item replace entity @s container.25 with black_stained_glass_pane{ShopItem:true} 1
-item replace entity @s container.26 with black_stained_glass_pane{ShopItem:true} 1
+item replace entity @s container.0 with black_stained_glass_pane[custom_data={ShopItem:true}] 1
+item replace entity @s container.1 with black_stained_glass_pane[custom_data={ShopItem:true}] 1
+item replace entity @s container.2 with black_stained_glass_pane[custom_data={ShopItem:true}] 1
+item replace entity @s container.3 with black_stained_glass_pane[custom_data={ShopItem:true}] 1
+item replace entity @s container.4 with black_stained_glass_pane[custom_data={ShopItem:true}] 1
+item replace entity @s container.5 with black_stained_glass_pane[custom_data={ShopItem:true}] 1
+item replace entity @s container.6 with black_stained_glass_pane[custom_data={ShopItem:true}] 1
+item replace entity @s container.7 with black_stained_glass_pane[custom_data={ShopItem:true}] 1
+item replace entity @s container.8 with black_stained_glass_pane[custom_data={ShopItem:true}] 1
+item replace entity @s container.18 with black_stained_glass_pane[custom_data={ShopItem:true}] 1
+item replace entity @s container.19 with black_stained_glass_pane[custom_data={ShopItem:true}] 1
+item replace entity @s container.20 with black_stained_glass_pane[custom_data={ShopItem:true}] 1
+item replace entity @s container.21 with black_stained_glass_pane[custom_data={ShopItem:true}] 1
+item replace entity @s container.22 with black_stained_glass_pane[custom_data={ShopItem:true}] 1
+item replace entity @s container.23 with black_stained_glass_pane[custom_data={ShopItem:true}] 1
+item replace entity @s container.24 with black_stained_glass_pane[custom_data={ShopItem:true}] 1
+item replace entity @s container.25 with black_stained_glass_pane[custom_data={ShopItem:true}] 1
+item replace entity @s container.26 with black_stained_glass_pane[custom_data={ShopItem:true}] 1
 
 #買うための枠があるか(27番目の枠が存在しない(0)or100以上ならあいている)
 execute store result score $myItems Core.Shop.IsExistItem run data get entity @a[tag=Shop.Practitioner,limit=1] Inventory[35].Slot
@@ -64,4 +64,4 @@ execute as @a[tag=Shop.Practitioner,limit=1] at @s store result score $Return Co
 ##         さらにその外側で同じ領域で受ける場合は1度参照すると内容が変わってしまう
 ##         (おそらく参照した際に戻り値としてStore関数の外のstoreに値が入ってしまうため)
 
-execute if score $Return Core.System.Input matches -1 run data modify entity @s Items append value {Slot:16b,Count:1b,id:"minecraft:red_stained_glass",tag:{ShopItem:true,display:{Name:'[{"translate":"RPG.Shop.NoCoin","color":"red"}]'}}}
+execute if score $Return Core.System.Input matches -1 run data modify entity @s Items append value {Slot:16b,count:1b,id:"minecraft:red_stained_glass",components: {"minecraft:custom_data": {ShopItem:true},display:{Name:'[{"translate":"RPG.Shop.NoCoin","color":"red"}]'}}}
