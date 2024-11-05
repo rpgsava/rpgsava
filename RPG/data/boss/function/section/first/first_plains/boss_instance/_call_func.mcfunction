@@ -10,7 +10,7 @@ data merge entity @s {IsBaby:False,CustomNameVisible:True,Tags:["firstPlainsBoss
 data modify entity @s CustomName set from storage mobs:entity CustomName
 
 #防具の決定(防御力は変数により決定されるので防具は見た目のみ)
-data merge entity @s {ArmorItems:[{},{},{},{id:"minecraft:iron_helmet",Count:1b,tag:{Unbreakable:1b}}]}
+data merge entity @s {ArmorItems:[{},{},{},{id:"minecraft:iron_helmet",count:1b,components:{unbreakable:{show_in_tooltip:false}}}]}
 
 #初期化タグの付与
 tag @s add Init
