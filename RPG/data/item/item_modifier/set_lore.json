@@ -2,7 +2,7 @@
     {
         "comment": "武器に説明があればそれを記載する",
         "function": "minecraft:set_lore",
-        "mode": "append",
+        "mode": "replace_all",
         "entity": "this",
         "lore": [
             [

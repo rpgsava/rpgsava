@@ -3,11 +3,11 @@ scoreboard players set @s Players.Attack.Damage 1
 
 #メインハンド攻撃力の取得
 # {RPG:{Damage:int,Attribute:int,weakAttr:int,Defence:int}} で表現し
-execute store result score @s Players.Attack.Calc run data get entity @s SelectedItem.tag.RPG.ArrowDamage
+execute store result score @s Players.Attack.Calc run data get entity @s SelectedItem.components.minecraft:custom_data.RPG.ArrowDamage
 #ショートボウを使っていなければ
 execute if score @s Players.Use.ShortBow matches 0 run scoreboard players operation @s Players.Attack.Damage += @s Players.Attack.Calc
 #ショートボウなら
-execute store result score @s Players.Attack.Calc run data get entity @s SelectedItem.tag.RPG.ShortArrowDamage
+execute store result score @s Players.Attack.Calc run data get entity @s SelectedItem.components.minecraft:custom_data.RPG.ShortArrowDamage
 execute if score @s Players.Use.ShortBow matches 1.. run scoreboard players operation @s Players.Attack.Damage += @s Players.Attack.Calc
 execute if score @s Players.Use.ShortBow matches 1.. run scoreboard players remove @s Players.Use.ShortBow 1
 
