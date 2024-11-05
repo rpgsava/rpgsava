@@ -4,7 +4,7 @@ execute as @a[tag=Shop.Practitioner] at @s positioned ~ ~1.2 ~ run tp @e[type=ch
 # execute at @s run tp @s ^ ^ ^0.4 ~ 0
 
 #クリックを検知
-execute store result score @s Core.Shop.IsClickItem run clear @a[tag=Shop.Practitioner,limit=1] #m_core:shop_item[custom_data={ShopItem: true}]
+execute store result score @s Core.Shop.IsClickItem run clear @a[tag=Shop.Practitioner,limit=1] #m_core:shop_item[custom_data~{ShopItem: true}]
 execute if entity @s[tag=Minecart.Shop.WeaponDisplay] if score @s Core.Shop.IsClickItem matches 1.. store result score $Return Core.System.Input run function m_core:gui/shop/item_click/give_weapon
 execute if entity @s[tag=Minecart.Shop.ArmorDisplay] if score @s Core.Shop.IsClickItem matches 1.. store result score $Return Core.System.Input run function m_core:gui/shop/item_click/give_armor
 execute if entity @s[tag=Minecart.Shop.FruitDisplay] if score @s Core.Shop.IsClickItem matches 1.. store result score $Return Core.System.Input run function m_core:gui/shop/item_click/give_fruit
