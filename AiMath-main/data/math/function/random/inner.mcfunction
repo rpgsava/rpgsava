@@ -72,4 +72,7 @@ execute if predicate math:0.5 run scoreboard players add Random AiMath 1
 scoreboard players operation Random AiMath += Random AiMath
 execute if predicate math:0.5 run scoreboard players add Random AiMath 1
 
+
 execute store result storage math:_ random int 1 run scoreboard players get Random AiMath
+
+return run data get storage math:_ random
