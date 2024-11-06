@@ -1,4 +1,4 @@
-particle dust 0 0.702 1 0 ~ ~ ~ 0.5 0.5 0.5 2 50
+particle dust{color:[0.0,0.702,1.0],scale:1} ~ ~ ~ 0.5 0.5 0.5 2 50
 playsound entity.enderman.teleport master @s ~ ~ ~ 2 1
 #テレポーターにアクセスする権利
 scoreboard players operation @s Map.Teleport.IsViewTeleport = $True Core.Bool
