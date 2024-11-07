@@ -19,6 +19,11 @@ tellraw @a [{"text": "=====================================================\n\n"
     scoreboard objectives add MK.v.MotionY dummy
     scoreboard objectives add MK.v.MotionZ dummy
     scoreboard objectives add MK.v.VecValue dummy
+
+    #offsetスコア
+    scoreboard objectives add MK.v.OffsetX dummy
+    scoreboard objectives add MK.v.OffsetY dummy
+    scoreboard objectives add MK.v.OffsetZ dummy
 tellraw @a [{"text": "initialize vector method...","color": "green","italic": true}]
 
     #UUID[0]代入スコア

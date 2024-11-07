@@ -38,6 +38,7 @@ scoreboard players set $10 Core.Int 10
 scoreboard players set $16 Core.Int 16
 scoreboard players set $20 Core.Int 20
 scoreboard players set $25 Core.Int 25
+scoreboard players set $30 Core.Int 30
 scoreboard players set $40 Core.Int 40
 scoreboard players set $50 Core.Int 50
 scoreboard players set $100 Core.Int 100
@@ -82,5 +83,8 @@ data merge storage core:shop {init:{Items:[{Slot:0b,count:1b,id:"minecraft:black
 scoreboard objectives add Core.Shop.IsClickItem dummy
 #アイテムが存在しているか
 scoreboard objectives add Core.Shop.IsExistItem dummy
+
+# ワールドティック
+scoreboard objectives add Core.World.Tick dummy
 
 tellraw @a[tag=admin] [{"text": "reload finish","color": "gold"}]

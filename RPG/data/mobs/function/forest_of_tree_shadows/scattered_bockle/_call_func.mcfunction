@@ -15,6 +15,9 @@ tag @s add Init
 # AI検知範囲の設定
 scoreboard players set @s Mobs.Hate.Range 32
 
+# uuidのセット
+execute store result score @s Mobs.Uuid run data get entity @s UUID[0]
+
 #HPの付与
 scoreboard players set @s Mobs.Health.Max 35
 scoreboard players operation @s Mobs.Health.Now = @s Mobs.Health.Max
