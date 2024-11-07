@@ -6,3 +6,4 @@ tag @s remove Story
         tag @s remove Story.ValleyOfSpringBreeze
         tag @s remove Story.ForestOfWindCreation
         tag @s remove Story.RoadOfToBigForest
+        tag @s remove Story.ForestOfTreeShadows
