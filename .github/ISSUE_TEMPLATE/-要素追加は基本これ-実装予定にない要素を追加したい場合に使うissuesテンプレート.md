@@ -1,5 +1,5 @@
 ---
-name: 実装予定にない要素を追加したい場合に使うissuesテンプレート
+name: "(要素追加は基本これ)実装予定にない要素を追加したい場合に使うissuesテンプレート"
 about: Describe feature templates
 title: ''
 labels: enhancement, unapproved
