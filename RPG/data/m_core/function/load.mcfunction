@@ -84,7 +84,4 @@ scoreboard objectives add Core.Shop.IsClickItem dummy
 #アイテムが存在しているか
 scoreboard objectives add Core.Shop.IsExistItem dummy
 
-# ワールドティック
-scoreboard objectives add Core.World.Tick dummy
-
 tellraw @a[tag=admin] [{"text": "reload finish","color": "gold"}]

@@ -12,6 +12,3 @@ execute as @a at @s run function m_core:lv/_check
 
 #ダメージ表示の削除
 execute as @e[type=item,tag=DmgDisplay] if data entity @s {PortalCooldown:0} run kill @s
-
-#worldtickの加算
-scoreboard players add $WorldTick Core.World.Tick 1
