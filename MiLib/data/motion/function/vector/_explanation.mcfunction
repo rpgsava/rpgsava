@@ -1,0 +1,2 @@
+tellraw @s [{"text":"vector","color": "gold","bold": true},{"text": ":","color": "white"},{"text":"\nメソッドcall:[milib:vector/vectorexe]","color": "red","italic": true,"underlined": true}]
+tellraw @s [{"text":"--使用方法","color": "light_purple","bold": true},{"text": ":","color": "white"},{"text":"\"MK.v.VecValue\"にベクトルの長さを代入し呼び出すことで呼び出し者のMotionタグに方向と呼び出し者のMK.v.VecValueに応じたベクトルが代入されます\n現在このメソッドの呼び出しは推奨されていません","color": "aqua","italic": true,"underlined": true}]
