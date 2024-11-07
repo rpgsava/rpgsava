@@ -1,1 +1,2 @@
 execute as @e[tag=firstPlainsBoss] at @s run function boss:section/first/first_plains/boss_instance/_tick
+execute if entity @e[tag=forestOfTreeShadowsBoss] run function boss:section/first/forest_of_tree_shadows/_check
