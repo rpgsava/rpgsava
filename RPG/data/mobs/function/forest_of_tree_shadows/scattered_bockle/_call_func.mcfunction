@@ -8,11 +8,14 @@ data merge entity @s {Invisible:true}
 # 判定サイズの設定
 data merge storage mobs:hit {Width:1.0f,LowPlHeight:-2.0f,HighPlHeight:0.0f}
 function mobs:_call
-data merge entity @s {IsBaby:False,CustomNameVisible:True,Tags:["forestOfTreeShadowsScatteredBockle","forestOfTreeShadowsEnemy","Enemy","Mobs.EntityHeight.1.0"]}
+data merge entity @s {IsBaby:False,CustomNameVisible:True,Tags:["forestOfTreeShadowsScatteredBockle","forestOfTreeShadowsEnemy","sectionFirstEnemy","Enemy","Mobs.EntityHeight.1.0"]}
 data modify entity @s CustomName set from storage mobs:entity CustomName
 
 #防具の決定(防御力は変数により決定されるので防具は見た目のみ)
 data merge entity @s {ArmorItems:[{},{},{},{id:"minecraft:warped_fungus_on_a_stick",count:1b,components: {"custom_model_data": 2000}}],ArmorDropChances:[0.0,0.0,0.0,0.0]}
+
+#モブの位置をブレさせる
+function mobs:_common/spawn/rand_place
 
 #初期化タグの付与
 tag @s add Init

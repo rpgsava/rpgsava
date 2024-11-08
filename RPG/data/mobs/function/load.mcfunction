@@ -23,3 +23,6 @@ scoreboard objectives add Mobs.Attack.IsReceive dummy
 scoreboard objectives add Mobs.Uuid_0 dummy
 # tick保管場所
 scoreboard objectives add Mobs.Tick dummy
+
+# ランダム参照場所保存
+scoreboard objectives add Mobs.Place.Random dummy
