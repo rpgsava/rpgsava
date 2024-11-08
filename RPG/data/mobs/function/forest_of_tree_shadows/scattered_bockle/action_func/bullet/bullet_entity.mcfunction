@@ -7,6 +7,6 @@ function milib:vector/_
 data merge entity @s {PickupDelay:1000000000}
 
 # ダメージ値の設定
-scoreboard players set @s Mobs.Attack.Damage 15
+scoreboard players set @s Mobs.Attack.Damage 3
 
 tag @s add Init
