@@ -8,7 +8,7 @@ tag @a[tag=Boss.forestoftreeshadows] remove Boss
 tag @a[tag=Boss.forestoftreeshadows] remove Boss.forestoftreeshadows
 
 #ボスをいないことにする
-scoreboard players operation $forestoftreeshadowsBoss Boss.IsSpawn = $False Core.Bool
+scoreboard players operation $forestOfTreeShadowsBossDarkElf Boss.IsSpawn = $False Core.Bool
 
 #討伐メッセージ
 data merge storage core:message {msg:'[{"translate":"RPG.Enemy.Boss.ForestOfTreeShadows.DarkElf"},{"text":"を討伐した！"}]'}

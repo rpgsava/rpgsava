@@ -9,3 +9,6 @@ execute positioned -133.5 -8 -214.5 as @s[dy=100,dx=240,dz=-167,tag=!Story.Fores
 
 execute positioned 140.0 -8 -383.5 as @s[dy=100,dx=-262,dz=-206,tag=!Story.RoadOfToBigForest] run function map:story/road_of_to_big_forest/event/teleport_1
 execute positioned 169.0 -8 -700.5 as @s[dy=100,dx=-202,dz=200,tag=!Story.RoadOfToBigForest] run function map:story/road_of_to_big_forest/event/teleport_1
+
+
+execute positioned 25152 17 25041 as @s[dy=2,dx=2,dz=2,tag=!Story.ForestOfTreeShadows] run function map:story/forest_of_tree_shadows/event/teleport_1

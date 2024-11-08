@@ -19,14 +19,12 @@
 # execute positioned 106.5 -8 -381.5 summon marker run function map:story/_marker/place_getter
 
 #テレポート開始地点
-kill @e[tag=Teleporter.ForestOfTreeShadows]
-data merge storage map:story {Tags:["Teleporter.ForestOfTreeShadows.1","Teleport.Place"]}
-execute positioned 25157 17 25064 summon item_display run function map:story/_marker/teleport_point
+
 
 #ストーリーマーカー
 kill @e[tag=Story.ForestOfTreeShadows.1]
 data merge storage map:story {Tags:["Story.ForestOfTreeShadows.1","Story"]}
-execute positioned 25157 17 25064 summon item_display run function map:story/_marker/init
+execute positioned 25152 17 25041 summon item_display run function map:story/_marker/init
 
 #敵のスポーンマーカー
 
