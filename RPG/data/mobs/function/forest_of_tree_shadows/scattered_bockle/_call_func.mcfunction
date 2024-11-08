@@ -14,6 +14,9 @@ data modify entity @s CustomName set from storage mobs:entity CustomName
 #防具の決定(防御力は変数により決定されるので防具は見た目のみ)
 data merge entity @s {ArmorItems:[{},{},{},{id:"minecraft:warped_fungus_on_a_stick",count:1b,components: {"custom_model_data": 2000}}],ArmorDropChances:[0.0,0.0,0.0,0.0]}
 
+#モブの位置をブレさせる
+function mobs:_common/spawn/rand_place
+
 #初期化タグの付与
 tag @s add Init
 
