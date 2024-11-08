@@ -5,5 +5,3 @@
 # 移動AI
 ## ヘイト範囲に敵がいたらAIを動かす
 execute if entity @a[distance=..32] facing entity @p eyes run function mobs:forest_of_tree_shadows/scattered_bockle/action_func/ai
-## 攻撃bulletがいたらmotionを設定
-execute if entity @a[distance=..5] facing entity @p eyes run function mobs:forest_of_tree_shadows/scattered_bockle/action_func/bullet/hit

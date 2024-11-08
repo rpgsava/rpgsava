@@ -61,7 +61,7 @@ execute as @s run scoreboard players operation @s MK.v.MotionZ *= @s MK.v.sinThe
 execute as @s run scoreboard players operation @s MK.v.MotionZ *= @s MK.v.sinPhi
 execute as @s run scoreboard players operation @s MK.v.MotionZ *= @s MK.v.cosBool
 
-tellraw @a [{"text": "vecvalue="},{"score":{"name": "@s","objective": "MK.v.VecValue"}},{"text": " sinΘ="},{"score":{"name": "@s","objective": "MK.v.sinTheta"}},{"text": " cosΘ="},{"score":{"name": "@s","objective": "MK.v.cosTheta"}}]
+# tellraw @a [{"text": "vecvalue="},{"score":{"name": "@s","objective": "MK.v.VecValue"}},{"text": " sinΘ="},{"score":{"name": "@s","objective": "MK.v.sinTheta"}},{"text": " cosΘ="},{"score":{"name": "@s","objective": "MK.v.cosTheta"}}]
 
 execute as @s[tag=!MK.v.Reverse] store result entity @s Motion[0] double 0.00000001 run scoreboard players get @s MK.v.MotionZ
 execute as @s[tag=!MK.v.Reverse] store result entity @s Motion[1] double 0.0001 run scoreboard players get @s MK.v.MotionY
@@ -71,6 +71,6 @@ execute as @s[tag=MK.v.Reverse] store result entity @s Motion[2] double 0.000000
 execute as @s[tag=MK.v.Reverse] store result entity @s Motion[1] double 0.0001 run scoreboard players get @s MK.v.MotionY
 execute as @s[tag=MK.v.Reverse] store result entity @s Motion[0] double 0.00000001 run scoreboard players get @s MK.v.MotionX
 
-tellraw @a [{"score":{"name": "@s","objective": "MK.v.MotionZ"}},{"score":{"name": "@s","objective": "MK.v.MotionX"}},{"score":{"name": "@s","objective": "MK.v.MotionY"}}]
+# tellraw @a [{"score":{"name": "@s","objective": "MK.v.MotionZ"}},{"score":{"name": "@s","objective": "MK.v.MotionX"}},{"score":{"name": "@s","objective": "MK.v.MotionY"}}]
 
 tag @s remove MK.v.Reverse 

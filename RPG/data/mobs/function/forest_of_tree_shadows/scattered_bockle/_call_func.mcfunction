@@ -1,7 +1,12 @@
 data merge entity @s {PersistenceRequired:true}
 data merge storage mobs:entity {CustomName:'[{"text":"scatterd_bockle"}]'}
 
+#透明にする
+data merge entity @s {Invisible:true}
+
 # 当たり判定の付与
+# 判定サイズの設定
+data merge storage mobs:hit {Width:1.0f,LowPlHeight:-2.0f,HighPlHeight:0.0f}
 function mobs:_call
 data merge entity @s {IsBaby:False,CustomNameVisible:True,Tags:["forestOfTreeShadowsScatteredBockle","forestOfTreeShadowsEnemy","Enemy"]}
 data modify entity @s CustomName set from storage mobs:entity CustomName
@@ -16,7 +21,7 @@ tag @s add Init
 scoreboard players set @s Mobs.Hate.Range 32
 
 # uuidのセット
-execute store result score @s Mobs.Uuid run data get entity @s UUID[0]
+execute store result score @s Mobs.Uuid_0 run data get entity @s UUID[0]
 
 #HPの付与
 scoreboard players set @s Mobs.Health.Max 35
