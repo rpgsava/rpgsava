@@ -4,7 +4,9 @@ rotate @s ~ ~-2
 scoreboard players set @s MK.v.VecValue 1
 function milib:vector/_
 # 自身を拾えないようにする
-data merge entity @s {PickupDelay:1000000000}
+
+# 透明にする
+data merge entity @s {Invisible:true}
 
 # ダメージ値の設定
 scoreboard players set @s Mobs.Attack.Damage 3

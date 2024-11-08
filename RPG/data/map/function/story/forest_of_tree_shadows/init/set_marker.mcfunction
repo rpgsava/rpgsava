@@ -19,20 +19,20 @@
 # execute positioned 106.5 -8 -381.5 summon marker run function map:story/_marker/place_getter
 
 #敵のスポーンマーカー
-kill @e[tag=EnemyMarker.ForestOfTreeShadows]
-data merge storage map:story {Tags:["EnemyMarker.ForestOfTreeShadows.1","EnemyMarker.Place","EnemyMarker.ForestOfTreeShadows"]}
+kill @e[tag=EnemyMarker.ForestOfTreeShadowsScatteredBockle]
+data merge storage map:story {Tags:["EnemyMarker.ForestOfTreeShadowsScatteredBockle.1","EnemyMarker.Place","EnemyMarker.ForestOfTreeShadowsScatteredBockle"]}
 execute positioned -30.5 17 -811.5 summon marker run function map:story/_marker/field_enemy_point
-data merge storage map:story {Tags:["EnemyMarker.ForestOfTreeShadows.2","EnemyMarker.Place","EnemyMarker.ForestOfTreeShadows"]}
+data merge storage map:story {Tags:["EnemyMarker.ForestOfTreeShadowsScatteredBockle.2","EnemyMarker.Place","EnemyMarker.ForestOfTreeShadowsScatteredBockle"]}
 execute positioned -57.5 17 -812.5 summon marker run function map:story/_marker/field_enemy_point
-data merge storage map:story {Tags:["EnemyMarker.ForestOfTreeShadows.3","EnemyMarker.Place","EnemyMarker.ForestOfTreeShadows"]}
+data merge storage map:story {Tags:["EnemyMarker.ForestOfTreeShadowsScatteredBockle.3","EnemyMarker.Place","EnemyMarker.ForestOfTreeShadowsScatteredBockle"]}
 execute positioned -92.5 16 -828.5 summon marker run function map:story/_marker/field_enemy_point
-data merge storage map:story {Tags:["EnemyMarker.ForestOfTreeShadows.4","EnemyMarker.Place","EnemyMarker.ForestOfTreeShadows"]}
+data merge storage map:story {Tags:["EnemyMarker.ForestOfTreeShadowsScatteredBockle.4","EnemyMarker.Place","EnemyMarker.ForestOfTreeShadowsScatteredBockle"]}
 execute positioned -116.5 19 -804.5 summon marker run function map:story/_marker/field_enemy_point
-data merge storage map:story {Tags:["EnemyMarker.ForestOfTreeShadows.5","EnemyMarker.Place","EnemyMarker.ForestOfTreeShadows"]}
+data merge storage map:story {Tags:["EnemyMarker.ForestOfTreeShadowsScatteredBockle.5","EnemyMarker.Place","EnemyMarker.ForestOfTreeShadowsScatteredBockle"]}
 execute positioned -99.5 18 -865.5 summon marker run function map:story/_marker/field_enemy_point
-data merge storage map:story {Tags:["EnemyMarker.ForestOfTreeShadows.6","EnemyMarker.Place","EnemyMarker.ForestOfTreeShadows"]}
+data merge storage map:story {Tags:["EnemyMarker.ForestOfTreeShadowsScatteredBockle.6","EnemyMarker.Place","EnemyMarker.ForestOfTreeShadowsScatteredBockle"]}
 execute positioned 2.5 19 -835.5 summon marker run function map:story/_marker/field_enemy_point
-data merge storage map:story {Tags:["EnemyMarker.ForestOfTreeShadows.7","EnemyMarker.Place","EnemyMarker.ForestOfTreeShadows"]}
+data merge storage map:story {Tags:["EnemyMarker.ForestOfTreeShadowsScatteredBockle.7","EnemyMarker.Place","EnemyMarker.ForestOfTreeShadowsScatteredBockle"]}
 execute positioned -161.5 20 -814.5 summon marker run function map:story/_marker/field_enemy_point
-data merge storage map:story {Tags:["EnemyMarker.ForestOfTreeShadows.8","EnemyMarker.Place","EnemyMarker.ForestOfTreeShadows"]}
+data merge storage map:story {Tags:["EnemyMarker.ForestOfTreeShadowsScatteredBockle.8","EnemyMarker.Place","EnemyMarker.ForestOfTreeShadowsScatteredBockle"]}
 execute positioned -88.5 18 -762.5 summon marker run function map:story/_marker/field_enemy_point

@@ -1,0 +1,1 @@
+execute if entity @s[tag=forestOfTreeShadowsScatteredBockle] run function mobs:forest_of_tree_shadows/scattered_bockle/sounds/damage
