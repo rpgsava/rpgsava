@@ -1,1 +1,1 @@
-execute at @e[tag=tyfonas_phantom,sort=nearest,limit=3] run playsound minecraft:entity.player.attack.sweep master @a ~ ~ ~ 1 1
+playsound minecraft:entity.player.attack.sweep master @a ~ ~ ~ 1 1

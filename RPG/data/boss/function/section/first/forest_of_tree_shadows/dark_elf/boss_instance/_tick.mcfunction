@@ -12,6 +12,6 @@ execute if score $forestOfTreeShadowsBossDarkElf Boss.TickCount matches 5 run fu
 execute if score $forestOfTreeShadowsBossDarkElf Boss.TickCount matches 10 run function boss:section/first/forest_of_tree_shadows/dark_elf/boss_instance/particle/first_paticle/first_paticle_3
 
 #tyfonas
-execute if entity @e[tag=forestOfTreeShadows.DarkElfBoss.TyfonasPhantom,type=phantom] run function boss:section/first/forest_of_tree_shadows/dark_elf/boss_instance/action_func/tyfonas/_tick
+execute as @e[tag=forestOfTreeShadows.DarkElfBoss.TyfonasPhantom,type=phantom] at @s run function boss:section/first/forest_of_tree_shadows/dark_elf/boss_instance/action_func/tyfonas/_tick
 
 #このモブに関する行動
