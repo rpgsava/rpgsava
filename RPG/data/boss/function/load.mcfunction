@@ -8,5 +8,8 @@ scoreboard objectives add Boss.Health.LoadHeal dummy
 #終了後のアイテム回収時間
 scoreboard objectives add Boss.EndTime dummy
 
+#ボスのtickcount
+scoreboard objectives add Boss.TickCount dummy
+
 #ボスの座標
 #alias vector Boss.FirstPlains.1 18.5 12 -29.5
