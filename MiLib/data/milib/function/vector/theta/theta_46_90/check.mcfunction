@@ -1,0 +1,2 @@
+execute as @s[scores={MK.v.Theta=46..69}] run function milib:vector/theta/theta_46_90/theta_46_69/sincostheta
+execute as @s[scores={MK.v.Theta=70..90}] run function milib:vector/theta/theta_46_90/theta_70_90/sincostheta

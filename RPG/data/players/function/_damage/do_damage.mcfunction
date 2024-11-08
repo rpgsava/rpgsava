@@ -3,7 +3,6 @@ tag @s remove Mobs.ReceiveDMG
 data merge entity @s {HurtByTimestamp:0}
 
 #防御力計算#TODO
-
 #自身に残ったダメージを与える
     scoreboard players operation $dmg Players.Attack.Damage = @a[tag=Attack.Now,limit=1] Players.Attack.Damage
     #表示
