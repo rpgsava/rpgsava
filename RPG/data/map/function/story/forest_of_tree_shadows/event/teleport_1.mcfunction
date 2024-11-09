@@ -1,0 +1,14 @@
+# tp @s 0 6 0 90 0
+function map:tag_all_remove
+
+
+tag @s add Story
+tag @s add Story.ForestOfTreeShadows
+
+# 全てのアドバンスメントを削除
+function map:player_pos_check/remove_advancements
+
+data merge storage core:message {title:'{"translate":"RPG.Place.ForestOfTreeShadows"}',msg:'["",{"text":""}]'}
+data modify storage map:story/progress now set from storage map:story/progress place[0][4]
+function map:story/_marker/progress/set
+function m_core:message/teleport

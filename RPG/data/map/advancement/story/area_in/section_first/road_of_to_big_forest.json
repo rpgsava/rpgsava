@@ -7,8 +7,8 @@
                     "location": {
                         "position": {
                             "x": {
-                                "min": 140,
-                                "max": -122
+                                "min": -122,
+                                "max": 140
                             },
                             "y": {
                                 "min": -8,
@@ -52,5 +52,8 @@
             "pl_1",
             "pl_2"
         ]
-    ]
+    ],
+    "rewards": {
+        "function": "map:story/road_of_to_big_forest/event/teleport_1"
+    }
 }

@@ -7,16 +7,16 @@
                     "location": {
                         "position": {
                             "x": {
-                                "min": -104.5,
-                                "max": 25.5
+                                "min": 0.0,
+                                "max": 60.0
                             },
                             "y": {
                                 "min": -8,
                                 "max": 92
                             },
                             "z": {
-                                "min": -104.5,
-                                "max": 25.5
+                                "min": -1000.0,
+                                "max": -762.0
                             }
                         }
                     }
@@ -30,16 +30,16 @@
                     "location": {
                         "position": {
                             "x": {
-                                "min": -107.5,
-                                "max": -46.5
+                                "min": -200.0,
+                                "max": 135.0
                             },
                             "y": {
                                 "min": -8,
                                 "max": 92
                             },
                             "z": {
-                                "min": -148.5,
-                                "max": -99.5
+                                "min": -1000.0,
+                                "max": -793.5
                             }
                         }
                     }
@@ -54,6 +54,6 @@
         ]
     ],
     "rewards": {
-        "function": "map:story/first_plain/event/teleport_1"
+        "function": "map:story/forest_of_tree_shadows/event/teleport_1"
     }
 }
