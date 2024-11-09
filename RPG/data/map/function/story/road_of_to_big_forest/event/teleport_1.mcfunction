@@ -1,5 +1,5 @@
 function map:tag_all_remove
-say run
+
 tag @s add Story
 tag @s add Story.RoadOfToBigForest
 
