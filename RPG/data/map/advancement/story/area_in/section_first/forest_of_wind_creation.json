@@ -1,0 +1,35 @@
+{
+    "criteria": {
+        "pl_1": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "player": {
+                    "location": {
+                        "position": {
+                            "x": {
+                                "min": -133.5,
+                                "max": 106.5
+                            },
+                            "y": {
+                                "min": -8,
+                                "max": 92
+                            },
+                            "z": {
+                                "min": -381.5,
+                                "max": -214.5
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "requirements": [
+        [
+            "pl_1"
+        ]
+    ],
+    "rewards": {
+        "function": "map:story/forest_of_wind_creation/event/teleport_1"
+    }
+}

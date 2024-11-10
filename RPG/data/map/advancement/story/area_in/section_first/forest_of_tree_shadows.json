@@ -1,0 +1,59 @@
+{
+    "criteria": {
+        "pl_1": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "player": {
+                    "location": {
+                        "position": {
+                            "x": {
+                                "min": 0.0,
+                                "max": 60.0
+                            },
+                            "y": {
+                                "min": -8,
+                                "max": 92
+                            },
+                            "z": {
+                                "min": -1000.0,
+                                "max": -762.0
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "pl_2": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "player": {
+                    "location": {
+                        "position": {
+                            "x": {
+                                "min": -200.0,
+                                "max": 135.0
+                            },
+                            "y": {
+                                "min": -8,
+                                "max": 92
+                            },
+                            "z": {
+                                "min": -1000.0,
+                                "max": -793.5
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "requirements": [
+        [
+            "pl_1",
+            "pl_2"
+        ]
+    ],
+    "rewards": {
+        "function": "map:story/forest_of_tree_shadows/event/teleport_1"
+    }
+}

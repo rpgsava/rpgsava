@@ -1,0 +1,59 @@
+{
+    "criteria": {
+        "pl_1": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "player": {
+                    "location": {
+                        "position": {
+                            "x": {
+                                "min": -122,
+                                "max": 140
+                            },
+                            "y": {
+                                "min": -8,
+                                "max": 92
+                            },
+                            "z": {
+                                "min": -589.5,
+                                "max": -383.5
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "pl_2": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "player": {
+                    "location": {
+                        "position": {
+                            "x": {
+                                "min": -33,
+                                "max": 169
+                            },
+                            "y": {
+                                "min": -8,
+                                "max": 92
+                            },
+                            "z": {
+                                "min": -700.5,
+                                "max": -500.5
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "requirements": [
+        [
+            "pl_1",
+            "pl_2"
+        ]
+    ],
+    "rewards": {
+        "function": "map:story/road_of_to_big_forest/event/teleport_1"
+    }
+}
