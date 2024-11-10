@@ -1,0 +1,3 @@
+
+execute if score @s Map.Story.Now matches 500..599 if entity @e[type=item_display,tag=Boss.MistcrestLake.1,distance = ..5] unless entity @a[tag=Boss.Ended.MistcrestLake] run function map:story/mistcrest_lake/event/boss_1
+execute if score @s Map.Story.Now matches 500..599 if entity @e[type=item_display,tag=Boss.MistcrestLake.1,distance = ..5] if entity @a[tag=Boss.Ended.MistcrestLake] if score @s Map.Boss.CanStart = $True Core.Bool run function boss:access/cant
