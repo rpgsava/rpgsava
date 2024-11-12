@@ -6,7 +6,7 @@ data merge entity @s {IsBaby:False,CustomNameVisible:True,Tags:["forestOfTreeSha
 data modify entity @s CustomName set from storage mobs:entity CustomName
 
 #防具の決定(防御力は変数により決定されるので防具は見た目のみ)
-data merge entity @s {ArmorItems:[{},{},{},{id:"minecraft:warped_fungus_on_a_stick",count:1b,components:{unbreakable:{show_in_tooltip:false}}}],ArmorDropChances:[0.0F,0.0F,0.0F,0.0F]}
+data merge entity @s {ArmorItems:[{},{},{},{id:"minecraft:warped_fungus_on_a_stick",count:1b,components:{unbreakable:{show_in_tooltip:false}}}],Invulnerable:1b,ArmorDropChances:[0.0F,0.0F,0.0F,0.0F]}
 
 #初期化タグの付与
 tag @s add Init
@@ -20,7 +20,7 @@ execute store result bossbar boss:story/forestoftreeshadows/arc value run scoreb
 scoreboard players set @s Boss.Health.LoadPlus 30
 
 #攻撃力の付与
-scoreboard players set @s Mobs.Attack.Damage 0
+scoreboard players set @s Mobs.Attack.Damage 20
 
 #防御力
 scoreboard players set @s Mobs.Defence 0
