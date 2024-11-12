@@ -3,8 +3,8 @@
 effect give @s resistance infinite 4 true
 #interactionを乗せる
 ## サイズを取り出す
-summon interaction ~ ~ ~ {height:-1.7,width:1.0,Tags:["LowPl"]}
-summon interaction ~ ~ ~ {height:0.8,width:1.0,Tags:["HighPl"]}
+summon interaction 0 0 0 {height:-1.7,width:1.0,Tags:["LowPl"]}
+summon interaction 0 0 0 {height:0.8,width:1.0,Tags:["HighPl"]}
 
 
 
