@@ -1,0 +1,1 @@
+playsound minecraft:block.enchantment_table.use master @a ~ ~ ~ 1 0.7
