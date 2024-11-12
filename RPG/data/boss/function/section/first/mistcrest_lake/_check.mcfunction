@@ -1,0 +1,1 @@
+execute as @e[tag=mistcrestLakeBoss.miraculousSwordDance] at @s run function boss:section/first/mistcrest_lake/miraculous_sword_dance/boss_instance/_tick

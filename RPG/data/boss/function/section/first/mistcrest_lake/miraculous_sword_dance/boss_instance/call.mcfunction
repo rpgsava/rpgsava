@@ -1,0 +1,12 @@
+#召喚処理
+## function mobs:first_plain/zombies/call
+
+#その場所を常時読み込み(ログアウトされたここがロードされなくなるとキルの処理が出来ない)
+forceload add ~ ~
+
+#スポーン時にボスバーを新規作成
+bossbar add boss:story/mistcrestlake.miraculous_sword_dance [{"translate": "RPG.Enemy.Boss.MiraculousSwordDance"}]
+bossbar set boss:story/mistcrestlake.miraculous_sword_dance color green
+
+#召喚+ボスバーの設定
+execute summon armor_stand run function boss:section/first/mistcrest_lake/miraculous_sword_dance/boss_instance/_call_func
