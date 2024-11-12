@@ -1,5 +1,5 @@
 #particle/sound
-function boss:section/first/forest_of_tree_shadows/dark_elf/boss_instance/particle/tyfonas_paticle/tyfonas_paticle
+function boss:section/first/forest_of_tree_shadows/dark_elf/boss_instance/particle/tyfonas_particle/tyfonas_paticle
 function boss:section/first/forest_of_tree_shadows/dark_elf/boss_instance/sound/tyfonas_sund/tyfonas_sound
 
 #tyfonas
