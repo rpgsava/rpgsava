@@ -1,0 +1,6 @@
+kill @s
+execute if score $forestOfTreeShadowsBossDarkElf forestOfTreeShadowsBossDarkElf.zephyros matches 4 run function boss:section/first/forest_of_tree_shadows/dark_elf/boss_instance/action_func/zephyros/zephyros_omega
+execute if score $forestOfTreeShadowsBossDarkElf forestOfTreeShadowsBossDarkElf.zephyros matches 3 run function boss:section/first/forest_of_tree_shadows/dark_elf/boss_instance/action_func/zephyros/zephyros_thyella
+execute if score $forestOfTreeShadowsBossDarkElf forestOfTreeShadowsBossDarkElf.zephyros matches 2 run function boss:section/first/forest_of_tree_shadows/dark_elf/boss_instance/action_func/zephyros/zephyros_excia
+execute if score $forestOfTreeShadowsBossDarkElf forestOfTreeShadowsBossDarkElf.zephyros matches 1 run function boss:section/first/forest_of_tree_shadows/dark_elf/boss_instance/action_func/zephyros/zephyros_menis
+
