@@ -49,9 +49,6 @@ execute as @s run function milib:vector/sincosphi
 execute as @s run scoreboard players operation @s MK.v.MotionX = @s MK.v.VecValue
 execute as @s run scoreboard players operation @s MK.v.MotionY = @s MK.v.VecValue
 execute as @s run scoreboard players operation @s MK.v.MotionZ = @s MK.v.VecValue
-execute as @s run scoreboard players operation @s MK.v.MotionX += @s MK.v.offsetX
-execute as @s run scoreboard players operation @s MK.v.MotionY += @s MK.v.offsetY
-execute as @s run scoreboard players operation @s MK.v.MotionZ += @s MK.v.offsetZ
 execute as @s run scoreboard players operation @s MK.v.MotionX *= @s MK.v.sinTheta
 execute as @s run scoreboard players operation @s MK.v.MotionX *= @s MK.v.cosPhi
 execute as @s run scoreboard players operation @s MK.v.MotionX *= @s MK.v.sinBool
@@ -60,6 +57,9 @@ execute as @s run scoreboard players operation @s MK.v.MotionY *= @s MK.v.ThetaB
 execute as @s run scoreboard players operation @s MK.v.MotionZ *= @s MK.v.sinTheta
 execute as @s run scoreboard players operation @s MK.v.MotionZ *= @s MK.v.sinPhi
 execute as @s run scoreboard players operation @s MK.v.MotionZ *= @s MK.v.cosBool
+execute as @s run scoreboard players operation @s MK.v.MotionX += @s MK.v.OffsetX
+execute as @s run scoreboard players operation @s MK.v.MotionY += @s MK.v.OffsetY
+execute as @s run scoreboard players operation @s MK.v.MotionZ += @s MK.v.OffsetZ
 
 # tellraw @a [{"text": "vecvalue="},{"score":{"name": "@s","objective": "MK.v.VecValue"}},{"text": " sinΘ="},{"score":{"name": "@s","objective": "MK.v.sinTheta"}},{"text": " cosΘ="},{"score":{"name": "@s","objective": "MK.v.cosTheta"}}]
 
