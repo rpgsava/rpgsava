@@ -1,0 +1,1 @@
+execute if entity @s[tag=sectionFirstEnemy] run function mobs:_sounds/section/first/_check

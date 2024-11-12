@@ -1,6 +1,2 @@
 #20tickに一回実行
-
-#villegerを見た時
-
-
-execute if score @s Map.Story.Now matches 400 if entity @e[type=item_display,tag=Story.ForestOfTreeShadows,distance = ..5] run say g
+execute if score $WorldTime%20 Core.Time matches 0 run function map:story/forest_of_tree_shadows/tick_20per

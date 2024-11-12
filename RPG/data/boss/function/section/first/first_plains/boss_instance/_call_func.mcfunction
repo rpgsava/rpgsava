@@ -6,7 +6,7 @@ data merge storage mobs:entity {CustomName:'[{"translate":"RPG.Enemy.Boss.FirstP
 
 function mobs:_call
 #最後にファイルパスを持たせる(後にマクロ対応)
-data merge entity @s {IsBaby:False,CustomNameVisible:True,Tags:["firstPlainsBoss","firstPlainEnemy","Enemy","Boss","section/first/first_plains"]}
+data merge entity @s {IsBaby:False,CustomNameVisible:True,Tags:["firstPlainsBoss","firstPlainEnemy","sectionFirstEnemy","Enemy","Boss","section/first/first_plains"]}
 data modify entity @s CustomName set from storage mobs:entity CustomName
 
 #防具の決定(防御力は変数により決定されるので防具は見た目のみ)

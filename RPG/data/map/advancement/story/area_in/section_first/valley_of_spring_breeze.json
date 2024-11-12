@@ -1,0 +1,59 @@
+{
+    "criteria": {
+        "pl_1": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "player": {
+                    "location": {
+                        "position": {
+                            "x": {
+                                "min": 29.5,
+                                "max": 73.5
+                            },
+                            "y": {
+                                "min": -8,
+                                "max": 92
+                            },
+                            "z": {
+                                "min": -152.5,
+                                "max": -32.5
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "pl_2": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "player": {
+                    "location": {
+                        "position": {
+                            "x": {
+                                "min": -64.5,
+                                "max": 63.5
+                            },
+                            "y": {
+                                "min": -8,
+                                "max": 92
+                            },
+                            "z": {
+                                "min": -212.5,
+                                "max": -145.5
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "requirements": [
+        [
+            "pl_1",
+            "pl_2"
+        ]
+    ],
+    "rewards": {
+        "function": "map:story/valley_of_spring_breeze/event/teleport_1"
+    }
+}

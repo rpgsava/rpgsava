@@ -2,7 +2,7 @@
 data merge storage mobs:entity {CustomName:'[{"text":"名もなきゾンビ"}]'}
 
 function mobs:_call
-data merge entity @s {IsBaby:False,CustomNameVisible:True,Tags:["ValleyOfSpringBreezeZombieZombie","ValleyOfSpringBreezeZombieEnemy","Enemy"]}
+data merge entity @s {IsBaby:False,CustomNameVisible:True,Tags:["ValleyOfSpringBreezeZombieZombie","ValleyOfSpringBreezeZombieEnemy","sectionFirstEnemy","Enemy"]}
 data modify entity @s CustomName set from storage mobs:entity CustomName
 
 #防具の決定(防御力は変数により決定されるので防具は見た目のみ)

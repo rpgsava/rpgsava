@@ -1,0 +1,2 @@
+execute as @e[tag=forestOfTreeShadowsScatteredBockle] at @s run function mobs:forest_of_tree_shadows/scattered_bockle/_tick
+execute as @e[tag=forestOfTreeShadowsScatteredBockleBullet] at @s run function mobs:forest_of_tree_shadows/scattered_bockle/_tick_bullet

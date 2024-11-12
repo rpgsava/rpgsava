@@ -1,3 +1,6 @@
+
+# 名前を代入
+    function m_core:display/damage/apply/_
 # ダメージ表示用item召喚
     loot spawn ~ ~ ~ loot m_core:dmg_in
 # itemの名前にダメージを代入
