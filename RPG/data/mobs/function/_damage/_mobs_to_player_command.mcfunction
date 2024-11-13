@@ -17,4 +17,4 @@ scoreboard players operation $dmg Mobs.Attack.Damage = @s Mobs.Attack.Damage
     execute as @p[tag=Mobs.Command.Attacked] run function players:_damage/view/health
 
 
-tag @s remove Mobs.Command.Attacked
+tag @a remove Mobs.Command.Attacked
