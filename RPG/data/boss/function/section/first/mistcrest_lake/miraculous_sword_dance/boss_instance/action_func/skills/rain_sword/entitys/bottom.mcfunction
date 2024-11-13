@@ -1,6 +1,6 @@
 
 # 一点からもう一点に対して線を引く
-data merge entity @s {Tags:["mistcrestLakeBoss.miraculousSwordDance.rainSword.Bottom","mistcrestLakeBoss.miraculousSwordDance.rainSword"],item:{id:"minecraft:warped_fungus_on_a_stick",count:1b,components:{custom_model_data:2002}}}
+data merge entity @s {Tags:["mistcrestLakeBoss.miraculousSwordDance.rainSword.Bottom","mistcrestLakeBoss.miraculousSwordDance.rainSword","mistcrestLakeBoss.miraculousSwordDance.Enemy"],item:{id:"minecraft:warped_fungus_on_a_stick",count:1b,components:{custom_model_data:2002}}}
 # scaleを4にする
 data merge entity @s {transformation:{right_rotation:{angle:0f,axis:[0f,1f,0f]},scale:[8f,1f,8f],left_rotation:{angle:0f,axis:[0f,1f,0f]},translation:[0f,0f,0f]}}
 

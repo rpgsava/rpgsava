@@ -1,3 +1,5 @@
+# > as at boss
+
 # tick loopを100tickに切り分けそれをスキルループとして扱う
 scoreboard players operation $skill_loop Boss.mistcrestLakeBoss.miraculousSwordDance = $mistcrestLakeBoss.miraculousSwordDance Boss.Tick
 scoreboard players operation $skill_loop Boss.mistcrestLakeBoss.miraculousSwordDance %= $50 Core.Int

@@ -1,0 +1,1 @@
+function boss:section/first/mistcrest_lake/miraculous_sword_dance/field_ending/delete_embers_of_flame/_

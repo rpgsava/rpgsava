@@ -1,5 +1,5 @@
 data merge entity @s {transformation:{right_rotation:{angle:0f,axis:[0f,1f,0f]},scale:[0.1f,0.1f,0f],left_rotation:{angle:0f,axis:[0f,1f,0f]},translation:[0f,0f,0f]},interpolation_duration:0}
-data merge entity @s {Tags:["mistcrestLakeBoss.miraculousSwordDance.rainSword.Top","mistcrestLakeBoss.miraculousSwordDance.rainSword"],block_state:{Name:"minecraft:orange_stained_glass"}}
+data merge entity @s {Tags:["mistcrestLakeBoss.miraculousSwordDance.rainSword.Top","mistcrestLakeBoss.miraculousSwordDance.rainSword","mistcrestLakeBoss.miraculousSwordDance.Enemy"],block_state:{Name:"minecraft:orange_stained_glass"}}
 
 # posをランダムで決める
 # 直でやってて汚いけど
