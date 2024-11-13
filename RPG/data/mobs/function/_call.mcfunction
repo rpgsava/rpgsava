@@ -1,5 +1,7 @@
 #モブ召喚時の共通処理
 
+execute unless loaded ~ ~ ~ run return fail
+
 effect give @s resistance infinite 4 true
 #interactionを乗せる
 ## サイズを取り出す
