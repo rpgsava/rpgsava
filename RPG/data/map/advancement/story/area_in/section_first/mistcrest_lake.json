@@ -1,0 +1,59 @@
+{
+    "criteria": {
+        "pl_1": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "player": {
+                    "location": {
+                        "position": {
+                            "x": {
+                                "min": 157,
+                                "max": 695
+                            },
+                            "y": {
+                                "min": -8,
+                                "max": 92
+                            },
+                            "z": {
+                                "min": -1124,
+                                "max": -762
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "pl_2": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "player": {
+                    "location": {
+                        "position": {
+                            "x": {
+                                "min": 700,
+                                "max": 787
+                            },
+                            "y": {
+                                "min": -8,
+                                "max": 92
+                            },
+                            "z": {
+                                "min": -1068,
+                                "max": -955
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "requirements": [
+        [
+            "pl_1",
+            "pl_2"
+        ]
+    ],
+    "rewards": {
+        "function": "map:story/mistcrest_lake/event/teleport_1"
+    }
+}

@@ -1,6 +1,7 @@
 function map:tag_all_remove
 
 tag @s add Story
+tag @s add Story.Section.First
 tag @s add Story.RoadOfToBigForest
 
 # 全てのアドバンスメントを削除

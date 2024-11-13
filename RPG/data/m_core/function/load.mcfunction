@@ -25,6 +25,7 @@ scoreboard players set $True Core.Bool 1
 
 scoreboard objectives add Core.Int dummy
 scoreboard players set $-1 Core.Int -1
+scoreboard players set $0 Core.Int 0
 scoreboard players set $1 Core.Int 1
 scoreboard players set $2 Core.Int 2
 scoreboard players set $3 Core.Int 3
@@ -47,6 +48,7 @@ scoreboard players set $400 Core.Int 400
 scoreboard players set $500 Core.Int 500
 scoreboard players set $1000 Core.Int 1000
 scoreboard players set $2000 Core.Int 2000
+scoreboard players set $2500 Core.Int 2500
 
 scoreboard objectives add Core.Time dummy
 

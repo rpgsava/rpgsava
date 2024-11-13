@@ -2,6 +2,7 @@
 function map:tag_all_remove
 
 tag @s add Story
+tag @s add Story.Section.First
 tag @s add Story.ForestOfWindCreation
 
 # 全てのアドバンスメントを削除

@@ -7,3 +7,4 @@ execute as @a[tag=Story.ValleyOfSpringBreeze] at @s run function map:story/valle
 execute as @a[tag=Story.ForestOfWindCreation] at @s run function map:story/forest_of_wind_creation/tick
 execute as @a[tag=Story.RoadOfToBigForest] at @s run function map:story/road_of_to_big_forest/tick
 execute as @a[tag=Story.ForestOfTreeShadows] at @s run function map:story/forest_of_tree_shadows/tick
+execute as @a[tag=Story.MistcrestLake] at @s run function map:story/mistcrest_lake/tick
