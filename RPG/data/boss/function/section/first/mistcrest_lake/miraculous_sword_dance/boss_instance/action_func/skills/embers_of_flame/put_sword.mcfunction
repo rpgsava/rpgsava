@@ -1,0 +1,3 @@
+summon item_display 25000 30 30000 {item:{id:"minecraft:iron_sword",count:1b},Tags:["mistcrestLakeBoss.miraculousSwordDance.embersOfFlame.Sword","mistcrestLakeBoss.miraculousSwordDance.embersOfFlame"],transformation:{left_rotation:{angle:0f,axis:[1f,0f,0f]},scale:[5f,5f,5f],right_rotation:{angle:2.35f,axis:[0f,0f,1f]},translation:[0f,0f,0f]},teleport_duration:59}
+scoreboard players set $swordScale Boss.mistcrestLakeBoss.miraculousSwordDance 50
+execute as @e[tag=mistcrestLakeBoss.miraculousSwordDance.embersOfFlame.Sword] at @s run tp ~ ~-20 ~
