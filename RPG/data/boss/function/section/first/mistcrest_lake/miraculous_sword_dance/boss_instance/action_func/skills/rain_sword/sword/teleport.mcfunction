@@ -1,1 +1,2 @@
 execute as @e[tag=mistcrestLakeBoss.miraculousSwordDance.rainSword.hit] at @s run tp @s ^ ^ ^25 ~ ~
+execute at @a[tag=Boss.MistcrestLake.MiraculousSwordDance] run playsound item.trident.riptide_1 ambient @a ~ ~ ~ 1

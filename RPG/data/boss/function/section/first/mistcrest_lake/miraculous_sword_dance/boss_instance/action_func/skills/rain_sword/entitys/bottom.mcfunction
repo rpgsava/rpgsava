@@ -22,5 +22,6 @@ scoreboard players operation $rain_posc Boss.mistcrestLakeBoss.miraculousSwordDa
 # 収まっていないなら自身をキル
 execute if score $rain_posc Boss.mistcrestLakeBoss.miraculousSwordDance matches 625.. run kill @s
 
+
 # 収まっていたのであれば、座標を更新 + top召喚
 execute unless score $rain_posc Boss.mistcrestLakeBoss.miraculousSwordDance matches 625.. run function boss:section/first/mistcrest_lake/miraculous_sword_dance/boss_instance/action_func/skills/rain_sword/entitys/valid_pos
