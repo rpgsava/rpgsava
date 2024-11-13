@@ -1,5 +1,3 @@
-# 足元(範囲item display)と上(block display)にmarkerを召喚
-# 後に上のblock displayのrotationから攻撃方向を取る(angleによる回転は使わない -> 値が変換され戻すのが大変なので
+scoreboard players set $recursionCnt Boss.mistcrestLakeBoss.miraculousSwordDance 20
 
-
-# 一点からもう一点に対して線を引く
+function boss:section/first/mistcrest_lake/miraculous_sword_dance/boss_instance/action_func/skills/rain_sword/recursion

@@ -1,0 +1,1 @@
+execute as @e[type=block_display,tag=mistcrestLakeBoss.miraculousSwordDance.rainSword.Top] at @s rotated as @s summon item_display run function boss:section/first/mistcrest_lake/miraculous_sword_dance/boss_instance/action_func/skills/rain_sword/sword/dat

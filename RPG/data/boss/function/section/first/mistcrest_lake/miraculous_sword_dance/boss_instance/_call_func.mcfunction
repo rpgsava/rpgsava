@@ -8,11 +8,11 @@ data merge storage mobs:entity {CustomName:'[{"translate":"RPG.Enemy.Boss.Miracu
 data merge storage mobs:hit {Width:1.0f,LowPlHeight:-2.0f,HighPlHeight:1.0f}
 function mobs:_call
 #最後にファイルパスを持たせる(後にマクロ対応)
-data merge entity @s {IsBaby:False,CustomNameVisible:True,Tags:["firstPlainsBoss","firstPlainEnemy","sectionFirstEnemy","Enemy","Boss","section/first/first_plains"]}
+data merge entity @s {IsBaby:False,CustomNameVisible:True,Tags:["mistcrestLakeBoss.miraculousSwordDance","mistcrestLakeBoss","mistcrestLakeEnemy","sectionFirstEnemy","Enemy","Boss","section/first/mistcrest_lake/miraculous_sword_dance"]}
 data modify entity @s CustomName set from storage mobs:entity CustomName
 
 #防具の決定(防御力は変数により決定されるので防具は見た目のみ)
-data merge entity @s {ArmorItems:[{},{},{},{id:"minecraft:warped_fungus_on_a_stick",count:1b,components:{unbreakable:{show_in_tooltip:false}}}]}
+data merge entity @s {ArmorItems:[{},{},{},{id:"minecraft:warped_fungus_on_a_stick",count:1b,components:{unbreakable:{show_in_tooltip:false},custom_model_data:2001}}]}
 
 #初期化タグの付与
 tag @s add Init
@@ -20,13 +20,13 @@ tag @s add Init
 #HPの付与
 scoreboard players set @s Mobs.Health.Max 1000
 scoreboard players operation @s Mobs.Health.Now = @s Mobs.Health.Max
-execute store result bossbar boss:story/firstplains max run scoreboard players get @s Mobs.Health.Max
-execute store result bossbar boss:story/firstplains value run scoreboard players get @s Mobs.Health.Now
+execute store result bossbar boss:story/mistcrestlake.miraculous_sword_dance max run scoreboard players get @s Mobs.Health.Max
+execute store result bossbar boss:story/mistcrestlake.miraculous_sword_dance value run scoreboard players get @s Mobs.Health.Now
 #人数増加時のHPを設定
 scoreboard players set @s Boss.Health.LoadPlus 1000
 
 #攻撃力の付与
-scoreboard players set @s Mobs.Attack.Damage 3
+scoreboard players set @s Mobs.Attack.Damage 20
 
 #防御力
 scoreboard players set @s Mobs.Defence 0

@@ -1,0 +1,1 @@
+execute as @e[tag=mistcrestLakeBoss.miraculousSwordDance.rainSword.Top] run data merge entity @s {transformation:{right_rotation:{angle:0f,axis:[0f,1f,0f]},scale:[0.1f,0.1f,25f],left_rotation:{angle:0f,axis:[0f,1f,0f]},translation:[0f,0f,0f]},interpolation_duration:15,start_interpolation:-1}

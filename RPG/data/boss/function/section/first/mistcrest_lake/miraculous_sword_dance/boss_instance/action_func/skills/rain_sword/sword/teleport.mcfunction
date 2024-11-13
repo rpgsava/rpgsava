@@ -1,0 +1,1 @@
+execute as @e[tag=mistcrestLakeBoss.miraculousSwordDance.rainSword.hit] at @s run tp @s ^ ^ ^25 ~ ~
