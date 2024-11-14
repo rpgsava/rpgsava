@@ -53,10 +53,10 @@ execute as @s run function milib:vector/sincosphi
 execute as @s run scoreboard players operation @s MK.v.MotionX = @s MK.v.VecValue
 execute as @s run scoreboard players operation @s MK.v.MotionY = @s MK.v.VecValue
 execute as @s run scoreboard players operation @s MK.v.MotionZ = @s MK.v.VecValue
-tellraw @a [{"score":{"name": "@s","objective": "MK.v.MotionZ"}}," ",{"score":{"name": "@s","objective": "MK.v.MotionX"}}," ",{"score":{"name": "@s","objective": "MK.v.MotionY"}}]
+# tellraw @a [{"score":{"name": "@s","objective": "MK.v.MotionZ"}}," ",{"score":{"name": "@s","objective": "MK.v.MotionX"}}," ",{"score":{"name": "@s","objective": "MK.v.MotionY"}}]
 execute as @s run scoreboard players operation @s MK.v.MotionX *= @s MK.v.sinTheta
 execute as @s run scoreboard players operation @s MK.v.MotionX *= @s MK.v.cosPhi
-tellraw @a [{"score":{"name": "@s","objective": "MK.v.MotionZ"}}," ",{"score":{"name": "@s","objective": "MK.v.MotionX"}}," ",{"score":{"name": "@s","objective": "MK.v.MotionY"}}]
+# tellraw @a [{"score":{"name": "@s","objective": "MK.v.MotionZ"}}," ",{"score":{"name": "@s","objective": "MK.v.MotionX"}}," ",{"score":{"name": "@s","objective": "MK.v.MotionY"}}]
 execute as @s run scoreboard players operation @s MK.v.MotionX *= @s MK.v.sinBool
 execute as @s run scoreboard players operation @s MK.v.MotionY *= @s MK.v.cosTheta
 execute as @s run scoreboard players operation @s MK.v.MotionY *= @s MK.v.ThetaBool
