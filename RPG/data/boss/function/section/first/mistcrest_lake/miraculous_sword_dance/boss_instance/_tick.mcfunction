@@ -1,3 +1,6 @@
+#それぞれのプレイヤーが持つボスへ与えたhealthと現在のmax_healthに相違がないかをチェックする(相違があった場合はその人の分max_healthを減算し、減算した比率に応じてhpも減算する)
+function boss:section/first/mistcrest_lake/miraculous_sword_dance/boss_instance/remove_health/_
+
 # ボスバーへ代入
 execute store result bossbar boss:story/mistcrestlake.miraculous_sword_dance value run scoreboard players get @s Mobs.Health.Now
 scoreboard players operation $hpRatio Boss.mistcrestLakeBoss.miraculousSwordDance = @s Mobs.Health.Now

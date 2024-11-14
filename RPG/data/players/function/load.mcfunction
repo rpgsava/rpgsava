@@ -41,3 +41,5 @@ scoreboard objectives add Players.Attack.ArrowDamage dummy
 scoreboard objectives add Players.Use.ShortBow dummy
 
 scoreboard objectives add Players.IsSame dummy
+
+scoreboard objectives add Players.Boss.AppendHealth dummy

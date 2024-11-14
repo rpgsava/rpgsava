@@ -21,6 +21,12 @@ tag @s add Init
 #HPの付与
 scoreboard players set @s Mobs.Health.Max 1000
 scoreboard players operation @s Mobs.Health.Now = @s Mobs.Health.Max
+
+scoreboard players operation $tmp Boss.Health.LoadPlus = @s Mobs.Health.Max
+#回復したhpを追加したプレイヤーに対して保持する
+execute as @a[tag=Boss.MistcrestLake.MiraculousSwordDance] unless score @s Players.Boss.AppendHealth matches 0.. run scoreboard players operation @s Players.Boss.AppendHealth = $tmp Boss.Health.LoadPlus
+scoreboard players reset $tmp Boss.Health.LoadPlus
+
 execute store result bossbar boss:story/mistcrestlake.miraculous_sword_dance max run scoreboard players get @s Mobs.Health.Max
 execute store result bossbar boss:story/mistcrestlake.miraculous_sword_dance value run scoreboard players get @s Mobs.Health.Now
 #hp比率の決定

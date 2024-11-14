@@ -17,6 +17,10 @@ scoreboard players operation @s Boss.Health.LoadHeal /= $100 Core.Int
 #HPを回復
 scoreboard players operation @s Mobs.Health.Now += @s Boss.Health.LoadHeal
 
+scoreboard players operation $tmp Boss.Health.LoadPlus = @s Boss.Health.LoadHeal
+#回復したhpを追加したプレイヤーに対して保持する
+execute as @a[tag=Boss.MistcrestLake.MiraculousSwordDance] unless score @s Players.Boss.AppendHealth matches 0.. run scoreboard players operation @s Players.Boss.AppendHealth = $tmp Boss.Health.LoadPlus
+scoreboard players reset $tmp Boss.Health.LoadHeal
 
 #解放
 scoreboard players reset $tmp Mobs.Health.Now
