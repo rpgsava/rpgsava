@@ -1,5 +1,8 @@
 # ボスバーへ代入
 execute store result bossbar boss:story/mistcrestlake.miraculous_sword_dance value run scoreboard players get @s Mobs.Health.Now
+scoreboard players operation $hpRatio Boss.mistcrestLakeBoss.miraculousSwordDance = @s Mobs.Health.Now
+scoreboard players operation $hpRatio Boss.mistcrestLakeBoss.miraculousSwordDance *= $100 Core.Int
+scoreboard players operation $hpRatio Boss.mistcrestLakeBoss.miraculousSwordDance /= @s Mobs.Health.Max
 
 # 今のところ常時歩かせる
 execute unless score $noAI Boss.mistcrestLakeBoss.miraculousSwordDance matches 1 run function boss:section/first/mistcrest_lake/miraculous_sword_dance/boss_instance/action_func/ai/move

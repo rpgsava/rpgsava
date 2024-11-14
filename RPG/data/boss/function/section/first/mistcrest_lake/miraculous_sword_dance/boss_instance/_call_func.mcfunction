@@ -23,6 +23,8 @@ scoreboard players set @s Mobs.Health.Max 1000
 scoreboard players operation @s Mobs.Health.Now = @s Mobs.Health.Max
 execute store result bossbar boss:story/mistcrestlake.miraculous_sword_dance max run scoreboard players get @s Mobs.Health.Max
 execute store result bossbar boss:story/mistcrestlake.miraculous_sword_dance value run scoreboard players get @s Mobs.Health.Now
+#hp比率の決定
+scoreboard players set $hpRatio Boss.mistcrestLakeBoss.miraculousSwordDance 100
 #人数増加時のHPを設定
 scoreboard players set @s Boss.Health.LoadPlus 1000
 
