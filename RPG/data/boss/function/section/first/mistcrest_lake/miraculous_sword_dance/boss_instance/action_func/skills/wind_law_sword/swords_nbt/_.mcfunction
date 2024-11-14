@@ -1,0 +1,14 @@
+tag @s add mistcrestLakeBoss.miraculousSwordDance.windLawSword
+tag @s add mistcrestLakeBoss.miraculousSwordDance.windLawSword.Armor
+
+scoreboard players set @s Mobs.Attack.Damage 40
+
+execute summon item_display run function boss:section/first/mistcrest_lake/miraculous_sword_dance/boss_instance/action_func/skills/wind_law_sword/swords_nbt/sword
+
+tag @s add Init
+
+
+execute store result entity @s Rotation[0] float 1 run scoreboard players get $WindLawSword.Rotation Boss.mistcrestLakeBoss.miraculousSwordDance
+
+# 次の剣用に30上昇させる
+scoreboard players add $WindLawSword.Rotation Boss.mistcrestLakeBoss.miraculousSwordDance 60

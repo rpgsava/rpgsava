@@ -1,0 +1,2 @@
+execute as @e[tag=mistcrestLakeBoss.miraculousSwordDance.windLawSword] at @s run rotate @s ~10 ~
+execute if score $skill_loop%20 Boss.mistcrestLakeBoss.miraculousSwordDance matches 0 as @a[distance=..4] at @s run function boss:section/first/mistcrest_lake/miraculous_sword_dance/boss_instance/action_func/skills/wind_law_sword/rotate/hit

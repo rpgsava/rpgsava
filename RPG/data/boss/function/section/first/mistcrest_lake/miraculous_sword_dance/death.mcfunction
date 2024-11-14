@@ -8,7 +8,7 @@ tag @a[tag=Boss.MistcrestLake.MiraculousSwordDance] remove Boss
 tag @a[tag=Boss.MistcrestLake.MiraculousSwordDance] remove Boss.MistcrestLake.MiraculousSwordDance
 
 #ボスをいないことにする
-scoreboard players operation $firstPlainsBoss Boss.IsSpawn = $False Core.Bool
+scoreboard players operation $mistcrestLakeBoss.miraculousSwordDance Boss.IsSpawn = $False Core.Bool
 
 #討伐メッセージ
 data merge storage core:message {msg:'[{"translate":"RPG.Enemy.Boss.MistcrestLake.MiraculousSwordDance"},{"text":"を討伐した！"}]'}
@@ -22,7 +22,7 @@ execute as @a[tag=Receive.BossDrop] if score @s Map.Story.IsReplay = $True Core.
 
 
 #経験値・コインのドロップと自身の削除
-tag @a[tag=Receive.BossDrop] add Boss.Ended.FirstPlains
+tag @a[tag=Receive.BossDrop] add Boss.Ended.MiraculousSwordDance
 function boss:drop
 
 #タグの削除
