@@ -27,5 +27,8 @@ scoreboard players add $next Core.PlayerId 1
 #ショップの状態
 scoreboard players set @s Core.Shop.IsSummonMinecart 0
 
+# スキル表示設定
+scoreboard players set @s Core.Boss.Skill.IsShowDetail 0
+
 function players:init
 function map:init
