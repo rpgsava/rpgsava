@@ -26,42 +26,8 @@ tellraw @a [{"text": "=====================================================\n\n"
     scoreboard objectives add MK.v.OffsetZ dummy
 tellraw @a [{"text": "initialize vector method...","color": "green","italic": true}]
 
-    #UUID[0]代入スコア
-    scoreboard objectives add MK.r.UUID_0 dummy
-
-    #乱数の範囲
-    scoreboard objectives add MK.r.RandValue dummy
-
-tellraw @a [{"text": "initialize rand method...","color": "green","italic": true}]
-
-    #sin結果
-    scoreboard objectives add MK.s.Sin dummy
-    #sinΘ Θ部分(代入される値)
-    scoreboard objectives add MK.s.Theta dummy
-
-tellraw @a [{"text": "initialize sin method...","color": "green","italic": true}]
-
-    #knockback storage初期化
-    scoreboard objectives add MK.k.knockbackValue dummy
-
-tellraw @a [{"text": "initialize knockback method...","color": "green","italic": true}]
-
-    #座標変数初期化
-    scoreboard objectives add MK.sa.Place dummy
-
-tellraw @a [{"text": "initialize armorset method...","color": "green","italic": true}]
-
-    scoreboard objectives add MK.attack.damage dummy
-    scoreboard objectives add MK.attack.delete_tag dummy
-    
-tellraw @a [{"text": "initialize damage method...","color": "green","italic": true}]
-
-    scoreboard objectives add MK.pi.predicate dummy
-    scoreboard objectives add MK.pi.x dummy
-    scoreboard objectives add MK.pi.y dummy
-    scoreboard objectives add MK.pi.z dummy
-
-tellraw @a [{"text": "initialize printinfo method...","color": "green","italic": true}]
+scoreboard objectives add MK.constants dummy
+scoreboard players set $360 MK.constants 360
 
 tellraw @a [{"text": "初期化が完了しました！\n\n","color": "yellow"}]
 tellraw @a [{"text": "ver : mikatan lib ver1.1\n\n","color": "gold"},{"text": "     /function milib:_explanation\n","color": "light_purple"},{"text": "     を実行すると各メソッドの使用方法が表示されます","color": "gold"},{"text":"\n\n=====================================================","color": "aqua"}]

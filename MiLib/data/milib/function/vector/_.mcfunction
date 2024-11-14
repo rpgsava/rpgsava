@@ -15,6 +15,10 @@ execute store result score @s MK.v.Theta run data get entity @s Rotation[1]
 ##マイナスが扱いずらいので加算
 scoreboard players add @s MK.v.Theta 90
 scoreboard players add @s[scores={MK.v.Phi=..1}] MK.v.Phi 359
+#modする
+scoreboard players operation @s MK.v.Phi %= $360 MK.constants
+
+# tellraw @a [{"text":"φ="},{"score":{"name": "@s","objective": "MK.v.Phi"}},{"text": " Θ="},{"score":{"name": "@s","objective": "MK.v.Theta"}}]
 
 ##Θで向いてる方向が上か下かを判定し、booleanで判断
 execute as @s[scores={MK.v.Theta=0..90}] run scoreboard players set @s MK.v.ThetaBool 1
@@ -49,8 +53,10 @@ execute as @s run function milib:vector/sincosphi
 execute as @s run scoreboard players operation @s MK.v.MotionX = @s MK.v.VecValue
 execute as @s run scoreboard players operation @s MK.v.MotionY = @s MK.v.VecValue
 execute as @s run scoreboard players operation @s MK.v.MotionZ = @s MK.v.VecValue
+tellraw @a [{"score":{"name": "@s","objective": "MK.v.MotionZ"}}," ",{"score":{"name": "@s","objective": "MK.v.MotionX"}}," ",{"score":{"name": "@s","objective": "MK.v.MotionY"}}]
 execute as @s run scoreboard players operation @s MK.v.MotionX *= @s MK.v.sinTheta
 execute as @s run scoreboard players operation @s MK.v.MotionX *= @s MK.v.cosPhi
+tellraw @a [{"score":{"name": "@s","objective": "MK.v.MotionZ"}}," ",{"score":{"name": "@s","objective": "MK.v.MotionX"}}," ",{"score":{"name": "@s","objective": "MK.v.MotionY"}}]
 execute as @s run scoreboard players operation @s MK.v.MotionX *= @s MK.v.sinBool
 execute as @s run scoreboard players operation @s MK.v.MotionY *= @s MK.v.cosTheta
 execute as @s run scoreboard players operation @s MK.v.MotionY *= @s MK.v.ThetaBool
@@ -71,6 +77,6 @@ execute as @s[tag=MK.v.Reverse] store result entity @s Motion[2] double 0.000000
 execute as @s[tag=MK.v.Reverse] store result entity @s Motion[1] double 0.0001 run scoreboard players get @s MK.v.MotionY
 execute as @s[tag=MK.v.Reverse] store result entity @s Motion[0] double 0.00000001 run scoreboard players get @s MK.v.MotionX
 
-# tellraw @a [{"score":{"name": "@s","objective": "MK.v.MotionZ"}},{"score":{"name": "@s","objective": "MK.v.MotionX"}},{"score":{"name": "@s","objective": "MK.v.MotionY"}}]
+# tellraw @a [{"score":{"name": "@s","objective": "MK.v.MotionZ"}}," ",{"score":{"name": "@s","objective": "MK.v.MotionX"}}," ",{"score":{"name": "@s","objective": "MK.v.MotionY"}}]
 
 tag @s remove MK.v.Reverse 
