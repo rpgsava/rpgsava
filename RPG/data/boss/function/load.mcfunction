@@ -19,6 +19,8 @@ scoreboard objectives add Boss.Tick dummy
 ## スコア名は Boss.<エリア名キャメルケース>.<ボス名キャメルケース>(1ボス当たり1scoreのみを用いる)
 ## また適切にresetを行いメモリを開放する
     scoreboard objectives add Boss.mistcrestLakeBoss.miraculousSwordDance dummy
+        # 参加に必要なHP割合
+        scoreboard players set $needHpRatioForJoin Boss.mistcrestLakeBoss.miraculousSwordDance 50
 
 # !> end
 
