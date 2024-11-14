@@ -1,5 +1,6 @@
 tag @s add mistcrestLakeBoss.miraculousSwordDance.windLawSword
 tag @s add mistcrestLakeBoss.miraculousSwordDance.windLawSword.Armor
+tag @s add mistcrestLakeBoss.miraculousSwordDance.Enemy
 
 scoreboard players set @s Mobs.Attack.Damage 40
 

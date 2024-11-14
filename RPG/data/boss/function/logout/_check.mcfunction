@@ -9,4 +9,4 @@ execute in map:rpg_map run tp @s 0 6 0 90 0
 data merge storage core:message {msg:'[{"translate": "RPG.MSG.BossCancel"}]'}
 function m_core:message/system
 
-execute if entity @s[tag=Boss.FirstPlains] run function boss:logout/first_plain/1
+execute if entity @s[tag=Story.Section.First] run function boss:logout/section/first/_check
