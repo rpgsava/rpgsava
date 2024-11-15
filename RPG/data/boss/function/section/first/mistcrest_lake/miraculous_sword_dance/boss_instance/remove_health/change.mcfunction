@@ -21,21 +21,3 @@ scoreboard players operation @s Mobs.Health.Max -= $tmp Players.Boss.AppendHealt
 scoreboard players operation @s Mobs.Health.Now *= @s Mobs.Health.Max
 # 現在hp * 変更後ful / 現在ful
 scoreboard players operation @s Mobs.Health.Now /= $full Players.Boss.AppendHealth
-
-# コピー
-# scoreboard players operation $tmp2 Players.Boss.AppendHealth = $tmp Players.Boss.AppendHealth
-
-# # 一旦100倍して割合を計算
-# scoreboard players operation $tmp Players.Boss.AppendHealth *= $100 Core.Int
-# # /実際のmax_health
-# scoreboard players operation $tmp Players.Boss.AppendHealth /= @s Mobs.Health.Max
-# # hpをその割合に変更
-# scoreboard players operation @s Mobs.Health.Now *= $tmp Players.Boss.AppendHealth
-# scoreboard players operation @s Mobs.Health.Now /= $100 Core.Int
-
-
-# # maxhealthを$tmp Players.Boss.AppendHealth に変更
-# scoreboard players operation @s Mobs.Health.Max = $tmp2 Players.Boss.AppendHealth
-
-# 解放
-scoreboard players reset $tmp2 Players.Boss.AppendHealth

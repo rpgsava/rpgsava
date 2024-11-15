@@ -34,6 +34,5 @@ function boss:section/first/mistcrest_lake/miraculous_sword_dance/field_ending/_
 # 不要なモブを捨てる
 kill @e[tag=mistcrestLakeBoss.miraculousSwordDance.Enemy]
 
-
 #読み込みの終了
 execute positioned 25000 12 30000 run forceload remove ~-25 ~-25 ~25 ~25
