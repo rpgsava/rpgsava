@@ -1,6 +1,9 @@
 #ボスバーの削除
 bossbar remove boss:story/mistcrestlake.miraculous_sword_dance
 
+# ボスに与えたhpを消す
+scoreboard players reset @a[tag=Boss.MistcrestLake.MiraculousSwordDance] Players.Boss.AppendHealth
+
 #アイテム取得タグ
 tag @a[tag=Boss.MistcrestLake.MiraculousSwordDance] add Receive.BossDrop
 #タグの削除
