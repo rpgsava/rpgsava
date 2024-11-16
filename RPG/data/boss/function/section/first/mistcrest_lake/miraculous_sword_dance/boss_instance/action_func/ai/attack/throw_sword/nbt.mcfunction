@@ -1,0 +1,3 @@
+data merge entity @s {Rotation:[0.0f,0.0f],Tags:["mistcrestLakeBoss.miraculousSwordDance.commonAttack","mistcrestLakeBoss.miraculousSwordDance.Enemy","mistcrestLakeBoss.miraculousSwordDance.commonAttack.display"],transformation:{right_rotation:{angle:1.55f,axis:[1.0f,0f,0.0f]},scale:[1.0f,1.0f,1.0f],left_rotation:{angle:0.75f,axis:[0.0f,1.0f,0.0f]},translation:[0.0f,0.0f,0.0f]},item:{id:"iron_sword",count:1b}}
+scoreboard players add $boss.Rotation Boss.mistcrestLakeBoss.miraculousSwordDance 60
+execute store result entity @s Rotation[0] float 1 run scoreboard players get $boss.Rotation Boss.mistcrestLakeBoss.miraculousSwordDance

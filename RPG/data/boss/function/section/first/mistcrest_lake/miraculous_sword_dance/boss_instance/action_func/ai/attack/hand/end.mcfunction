@@ -1,0 +1,2 @@
+# 初期値
+data merge entity @s {transformation:{right_rotation:{angle:0.0f,axis:[0.0f,0.0f,0.0f]},scale:[1.0f,1.0f,1.0f],left_rotation:{angle:0.0f,axis:[0.0f,0.0f,0.0f]},translation:[-0.35f,-0.7f,0.0f]},start_interpolation:-1,interpolation_duration:3}

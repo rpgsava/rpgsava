@@ -1,13 +1,25 @@
 #それぞれのプレイヤーが持つボスへ与えたhealthと現在のmax_healthに相違がないかをチェックする(相違があった場合はその人の分max_healthを減算し、減算した比率に応じてhpも減算する)
 function boss:section/first/mistcrest_lake/miraculous_sword_dance/boss_instance/remove_health/_
 
+# ボスバーへ代入
+execute store result bossbar boss:story/mistcrestlake.miraculous_sword_dance value run scoreboard players get @s Mobs.Health.Now
+scoreboard players operation $hpRatio Boss.mistcrestLakeBoss.miraculousSwordDance = @s Mobs.Health.Now
+scoreboard players operation $hpRatio Boss.mistcrestLakeBoss.miraculousSwordDance *= $100 Core.Int
+scoreboard players operation $hpRatio Boss.mistcrestLakeBoss.miraculousSwordDance /= @s Mobs.Health.Max
+
 
 # 今のところ常時歩かせる
-execute unless score $noAI Boss.mistcrestLakeBoss.miraculousSwordDance matches 1 on vehicle on vehicle on vehicle on vehicle on vehicle run function boss:section/first/mistcrest_lake/miraculous_sword_dance/boss_instance/action_func/ai/move
+execute unless score $noAI Boss.mistcrestLakeBoss.miraculousSwordDance matches 1 on vehicle on vehicle on vehicle on vehicle on vehicle run function boss:section/first/mistcrest_lake/miraculous_sword_dance/boss_instance/action_func/ai/_
 
 execute on vehicle on vehicle on vehicle on vehicle on vehicle facing entity @p feet run rotate @s ~ 0
 execute as @e[tag=mistcrestLakeBoss.miraculousSwordDance.bodyDisplay] facing entity @p feet run rotate @s ~ 0
 
+
+# - 通常攻撃処理 ----------------------------------------------
+
+execute as @e[tag=mistcrestLakeBoss.miraculousSwordDance.commonAttack.display] at @s run function boss:section/first/mistcrest_lake/miraculous_sword_dance/boss_instance/action_func/ai/attack/move/_
+
+# - スキル処理 ------------------------------------------
 
 # 0-200tickで演出する(200tick時に読み込みに成功していれば100tickに飛ばす 成功していなければ199tickに飛ぶ)
 execute if score $mistcrestLakeBoss.miraculousSwordDance Boss.Tick matches 0..200 run function boss:section/first/mistcrest_lake/miraculous_sword_dance/boss_instance/action_func/openning/_

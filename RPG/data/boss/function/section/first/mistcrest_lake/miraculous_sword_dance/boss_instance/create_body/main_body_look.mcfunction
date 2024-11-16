@@ -4,9 +4,9 @@ data merge storage mobs:entity {CustomName:'[{"translate":"RPG.Enemy.Boss.Miracu
 
 
 #最後にファイルパスを持たせる(後にマクロ対応)
-data merge entity @s {IsBaby:True,CustomNameVisible:True,Tags:["mistcrestLakeBoss.miraculousSwordDance","mistcrestLakeBoss.miraculousSwordDance.aiPart","mistcrestLakeBoss.miraculousSwordDance.mainBody","mistcrestLakeBoss.miraculousSwordDance.bodyDisplay","mistcrestLakeBoss.miraculousSwordDance.Enemy","mistcrestLakeBoss","mistcrestLakeEnemy","sectionFirstEnemy","Enemy","Boss","section/first/mistcrest_lake/miraculous_sword_dance"]}
+data merge entity @s {IsBaby:True,CustomNameVisible:True,Tags:["mistcrestLakeBoss.miraculousSwordDance","mistcrestLakeBoss.miraculousSwordDance.aiPart","mistcrestLakeBoss.miraculousSwordDance.mainBody","mistcrestLakeBoss.miraculousSwordDance.bodyDisplay","mistcrestLakeBoss.miraculousSwordDance.Enemy","mistcrestLakeBoss","mistcrestLakeEnemy","sectionFirstEnemy","Enemy","Boss","Mobs.EntityHeight.1.0","section/first/mistcrest_lake/miraculous_sword_dance"]}
 
-data merge entity @s {transformation:{right_rotation:{angle:0.0f,axis:[0.0f,0.0f,0.0f]},scale:[1.0f,1.0f,1.0f],left_rotation:{angle:0.0f,axis:[0.0f,0.0f,0.0f]},translation:[-0.25f,-0.5f,-0.25f]}}
+data merge entity @s {transformation:{right_rotation:{angle:0.0f,axis:[0.0f,0.0f,0.0f]},scale:[1.0f,1.0f,1.0f],left_rotation:{angle:0.0f,axis:[0.0f,0.0f,0.0f]},translation:[-0.25f,-0.6f,-0.25f]}}
 
 data modify entity @s CustomName set from storage mobs:entity CustomName
 
@@ -34,6 +34,8 @@ execute store result bossbar boss:story/mistcrestlake.miraculous_sword_dance max
 execute store result bossbar boss:story/mistcrestlake.miraculous_sword_dance value run scoreboard players get @s Mobs.Health.Now
 #hp比率の決定
 scoreboard players set $hpRatio Boss.mistcrestLakeBoss.miraculousSwordDance 100
+scoreboard players set $isCommonAttacking Boss.mistcrestLakeBoss.miraculousSwordDance 0
+scoreboard players set $noAI Boss.mistcrestLakeBoss.miraculousSwordDance 0
 #人数増加時のHPを設定
 scoreboard players set @s Boss.Health.LoadPlus 1000
 

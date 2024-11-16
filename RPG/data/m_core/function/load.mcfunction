@@ -42,6 +42,7 @@ scoreboard players set $25 Core.Int 25
 scoreboard players set $30 Core.Int 30
 scoreboard players set $40 Core.Int 40
 scoreboard players set $50 Core.Int 50
+scoreboard players set $60 Core.Int 60
 scoreboard players set $100 Core.Int 100
 scoreboard players set $200 Core.Int 200
 scoreboard players set $400 Core.Int 400

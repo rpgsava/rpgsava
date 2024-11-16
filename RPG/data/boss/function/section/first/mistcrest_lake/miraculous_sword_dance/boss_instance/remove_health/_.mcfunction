@@ -15,9 +15,3 @@ execute if score $tmp Players.Boss.AppendHealth matches 1.. run function boss:se
 # 解放
 scoreboard players reset $tmp Players.Boss.AppendHealth
 
-
-# ボスバーへ代入
-execute store result bossbar boss:story/mistcrestlake.miraculous_sword_dance value run scoreboard players get @s Mobs.Health.Now
-scoreboard players operation $hpRatio Boss.mistcrestLakeBoss.miraculousSwordDance = @s Mobs.Health.Now
-scoreboard players operation $hpRatio Boss.mistcrestLakeBoss.miraculousSwordDance *= $100 Core.Int
-scoreboard players operation $hpRatio Boss.mistcrestLakeBoss.miraculousSwordDance /= @s Mobs.Health.Max

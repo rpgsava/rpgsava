@@ -34,5 +34,11 @@ function boss:section/first/mistcrest_lake/miraculous_sword_dance/field_ending/_
 # 不要なモブを捨てる
 kill @e[tag=mistcrestLakeBoss.miraculousSwordDance.Enemy]
 
+# スコアをすべて初期化
+scoreboard players reset * Boss.mistcrestLakeBoss.miraculousSwordDance
+# 定数のみ以下で再定義
+    # 参加に必要なHP割合
+    scoreboard players set $needHpRatioForJoin Boss.mistcrestLakeBoss.miraculousSwordDance 50
+
 #読み込みの終了
 execute positioned 25000 12 30000 run forceload remove ~-25 ~-25 ~25 ~25

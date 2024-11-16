@@ -1,5 +1,5 @@
 particle flame ~ ~ ~ 1 0 1 10 100
-scoreboard players set $dmg Mobs.Attack.Damage 1
+scoreboard players operation $dmg Mobs.Attack.Damage = $attackDamage.embersOfFlare.Fire Boss.mistcrestLakeBoss.miraculousSwordDance
 tag @s add Mobs.Command.Attacked
 function mobs:_damage/_constant_player
 
