@@ -12,8 +12,8 @@ data modify entity @s CustomName set from storage mobs:entity CustomName
 # 透明化
 data merge entity @s {Invisible:True}
 
-#防具の決定(防御力は変数により決定されるので防具は見た目のみ)
-data merge entity @s {ArmorItems:[{},{},{},{id:"minecraft:warped_fungus_on_a_stick",count:1b,components:{unbreakable:{show_in_tooltip:false},custom_model_data:2001}}],Invulnerable:1b}
+# 体を生成
+function boss:section/first/mistcrest_lake/miraculous_sword_dance/boss_instance/create_body/_
 
 #初期化タグの付与
 tag @s add Init

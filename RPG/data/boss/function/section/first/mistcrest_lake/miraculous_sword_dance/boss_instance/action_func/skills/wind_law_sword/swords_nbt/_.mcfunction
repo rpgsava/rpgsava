@@ -2,6 +2,8 @@ tag @s add mistcrestLakeBoss.miraculousSwordDance.windLawSword
 tag @s add mistcrestLakeBoss.miraculousSwordDance.windLawSword.Armor
 tag @s add mistcrestLakeBoss.miraculousSwordDance.Enemy
 
+data merge entity @s {Invulnerable:1b,Invisible:1b}
+
 scoreboard players set @s Mobs.Attack.Damage 40
 
 execute summon item_display run function boss:section/first/mistcrest_lake/miraculous_sword_dance/boss_instance/action_func/skills/wind_law_sword/swords_nbt/sword

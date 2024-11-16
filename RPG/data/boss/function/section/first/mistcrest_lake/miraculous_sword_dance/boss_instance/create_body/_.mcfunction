@@ -1,0 +1,1 @@
+execute summon armor_stand run function boss:section/first/mistcrest_lake/miraculous_sword_dance/boss_instance/create_body/main_body

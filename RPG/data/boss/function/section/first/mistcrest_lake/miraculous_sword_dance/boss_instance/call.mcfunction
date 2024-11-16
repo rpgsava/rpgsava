@@ -9,7 +9,8 @@ bossbar add boss:story/mistcrestlake.miraculous_sword_dance [{"translate": "RPG.
 bossbar set boss:story/mistcrestlake.miraculous_sword_dance color green
 
 #召喚+ボスバーの設定
-execute summon armor_stand run function boss:section/first/mistcrest_lake/miraculous_sword_dance/boss_instance/_call_func
+execute summon armor_stand run function boss:section/first/mistcrest_lake/miraculous_sword_dance/boss_instance/create_body/main_body
+# execute summon armor_stand run function boss:section/first/mistcrest_lake/miraculous_sword_dance/boss_instance/_call_func
 
 # tickの設定
 scoreboard players set $mistcrestLakeBoss.miraculousSwordDance Boss.Tick 0

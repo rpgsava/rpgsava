@@ -1,5 +1,5 @@
 # 動きを止める
-data merge entity @s {Motion:[0.0f,0.0f,0.0f]}
+execute on vehicle on vehicle on vehicle on vehicle run data merge entity @s {Motion:[0.0f,0.0f,0.0f]}
 # aiを消す
 scoreboard players set $noAI Boss.mistcrestLakeBoss.miraculousSwordDance 1
 # 自身の場所に剣のパーティクルを出現
