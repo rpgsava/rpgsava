@@ -1,3 +1,6 @@
+# 自身の場所にパーティクル
+particle end_rod ~ ~ ~ 1 1 1 1 20
+
 tp ^ ^ ^3
 data merge entity @s {teleport_duration:1}
 # summon item_display ~-3.0 ~ ~ {item:{id:"minecraft:apple"},Tags:["test"]}

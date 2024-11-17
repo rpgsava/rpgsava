@@ -21,6 +21,8 @@ execute as @e[tag=mistcrestLakeBoss.miraculousSwordDance.bodyDisplay] facing ent
 execute if score $progress Boss.mistcrestLakeBoss.miraculousSwordDance matches 0 unless score $mistcrestLakeBoss.miraculousSwordDance Boss.Tick matches 1000 if score $hpRatio Boss.mistcrestLakeBoss.miraculousSwordDance <= $49 Core.Int run scoreboard players set @s Mobs.Defence 2147483
 # 49%以下でスキルを開始するタイミングの時progressを1進め、分岐を変更
 execute if score $progress Boss.mistcrestLakeBoss.miraculousSwordDance matches 0 if score $mistcrestLakeBoss.miraculousSwordDance Boss.Tick matches 1000 if score $hpRatio Boss.mistcrestLakeBoss.miraculousSwordDance <= $49 Core.Int run function boss:section/first/mistcrest_lake/miraculous_sword_dance/boss_instance/action_func/progress/_to_1
+# 1のフェーズに入っていて1フェーズの内容をすべて終えていたら
+execute if score $progress Boss.mistcrestLakeBoss.miraculousSwordDance matches 1 if score $loop.swordDance Boss.mistcrestLakeBoss.miraculousSwordDance matches 0 run function boss:section/first/mistcrest_lake/miraculous_sword_dance/boss_instance/action_func/progress/_to_2
 
 # - 通常攻撃処理 ----------------------------------------------
 

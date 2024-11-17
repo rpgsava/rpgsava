@@ -1,0 +1,1 @@
+execute as @a[tag=Boss.MistcrestLake.MiraculousSwordDance] at @s run playsound minecraft:item.trident.riptide_1 ambient @s ~ ~ ~ 2 1

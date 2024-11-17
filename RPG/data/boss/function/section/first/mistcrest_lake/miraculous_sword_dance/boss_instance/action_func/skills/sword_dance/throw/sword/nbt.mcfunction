@@ -1,4 +1,4 @@
-data merge entity @s {item:{id:"iron_sword",count:1b},Rotation:[180.0f,0.0f]}
+data merge entity @s {item:{id:"iron_sword",count:1b},Rotation:[180.0f,0.0f],glow_color_override:16777215}
 data merge entity @s {transformation:{right_rotation:{angle:1.55f,axis:[1.0f,0f,0.0f]},scale:[2.0f,2.0f,2.0f],left_rotation:{angle:0.75f,axis:[0.0f,1.0f,0.0f]},translation:[0.0f,0.0f,0.0f]}}
 
 # 発光
