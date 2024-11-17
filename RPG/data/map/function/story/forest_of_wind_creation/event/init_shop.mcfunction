@@ -7,6 +7,7 @@
     function item:add_storage/weapons.1001.short_rod
     function item:add_storage/weapons.1002.short_staff
     function item:add_storage/weapons.2001.wooden_bow
+    function item:add_storage/weapons.9999.debug_sword
     #最初のスロットを決めて
     scoreboard players set $start Item.SetStorage.Slot 10
     #トロッコ内のアイテムの位置を決定
