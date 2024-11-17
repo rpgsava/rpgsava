@@ -11,9 +11,16 @@ scoreboard players operation $hpRatio Boss.mistcrestLakeBoss.miraculousSwordDanc
 # 今のところ常時歩かせる
 execute unless score $noAI Boss.mistcrestLakeBoss.miraculousSwordDance matches 1 on vehicle on vehicle on vehicle on vehicle on vehicle run function boss:section/first/mistcrest_lake/miraculous_sword_dance/boss_instance/action_func/ai/_
 
+# ボスの方向をプレイヤーに
 execute on vehicle on vehicle on vehicle on vehicle on vehicle facing entity @p feet run rotate @s ~ 0
 execute as @e[tag=mistcrestLakeBoss.miraculousSwordDance.bodyDisplay] facing entity @p feet run rotate @s ~ 0
 
+# - 進捗進行 -------------------------------------------------
+
+# 49%以下で、通常スキル中であれば防御力をカンストさせる
+execute if score $progress Boss.mistcrestLakeBoss.miraculousSwordDance matches 0 unless score $mistcrestLakeBoss.miraculousSwordDance Boss.Tick matches 1000 if score $hpRatio Boss.mistcrestLakeBoss.miraculousSwordDance <= $49 Core.Int run scoreboard players set @s Mobs.Defence 2147483
+# 49%以下でスキルを開始するタイミングの時progressを1進め、分岐を変更
+execute if score $progress Boss.mistcrestLakeBoss.miraculousSwordDance matches 0 if score $mistcrestLakeBoss.miraculousSwordDance Boss.Tick matches 1000 if score $hpRatio Boss.mistcrestLakeBoss.miraculousSwordDance <= $49 Core.Int run function boss:section/first/mistcrest_lake/miraculous_sword_dance/boss_instance/action_func/progress/_to_1
 
 # - 通常攻撃処理 ----------------------------------------------
 
@@ -21,22 +28,8 @@ execute as @e[tag=mistcrestLakeBoss.miraculousSwordDance.commonAttack.display] a
 
 # - スキル処理 ------------------------------------------
 
-# 0-200tickで演出する(200tick時に読み込みに成功していれば100tickに飛ばす 成功していなければ199tickに飛ぶ)
-execute if score $mistcrestLakeBoss.miraculousSwordDance Boss.Tick matches 0..200 run function boss:section/first/mistcrest_lake/miraculous_sword_dance/boss_instance/action_func/openning/_
+# 最初の場面では普通にスキル処理
+execute if score $progress Boss.mistcrestLakeBoss.miraculousSwordDance matches 0 run function boss:section/first/mistcrest_lake/miraculous_sword_dance/boss_instance/action_func/skills/_
 
-# 当たり判定の設定
-execute if score $mistcrestLakeBoss.miraculousSwordDance Boss.Tick matches 999 run function boss:section/first/mistcrest_lake/miraculous_sword_dance/boss_instance/set_collision
-
-# とりあえず1000ティックまで待つことにする。
-
-# 1000ティック目になんかいい感じに抽選する 
-execute if score $mistcrestLakeBoss.miraculousSwordDance Boss.Tick matches 1000 run function boss:section/first/mistcrest_lake/miraculous_sword_dance/boss_instance/action_func/ai/skill/rand
-# 乱数が0なら
-execute if score $skill_rand Boss.mistcrestLakeBoss.miraculousSwordDance = $0 Core.Int if score $mistcrestLakeBoss.miraculousSwordDance Boss.Tick matches 1000..1399 run function boss:section/first/mistcrest_lake/miraculous_sword_dance/boss_instance/action_func/skills/rain_sword/_
-# 乱数が1なら
-execute if score $skill_rand Boss.mistcrestLakeBoss.miraculousSwordDance = $1 Core.Int if score $mistcrestLakeBoss.miraculousSwordDance Boss.Tick matches 1000..1399 run function boss:section/first/mistcrest_lake/miraculous_sword_dance/boss_instance/action_func/skills/embers_of_flame/_
-# 乱数が2なら
-execute if score $skill_rand Boss.mistcrestLakeBoss.miraculousSwordDance = $2 Core.Int if score $mistcrestLakeBoss.miraculousSwordDance Boss.Tick matches 1000..1399 run function boss:section/first/mistcrest_lake/miraculous_sword_dance/boss_instance/action_func/skills/wind_law_sword/_
-
-scoreboard players add $mistcrestLakeBoss.miraculousSwordDance Boss.Tick 1
-execute if score $mistcrestLakeBoss.miraculousSwordDance Boss.Tick >= $1400 Core.Int run scoreboard players operation $mistcrestLakeBoss.miraculousSwordDance Boss.Tick = $1000 Core.Int
+# 場面が進んだ際(~49%)に、モーション移動(フィールド外に飛び出して剣を7発づつ打ち出す)
+execute if score $progress Boss.mistcrestLakeBoss.miraculousSwordDance matches 1 if score $loop.swordDance Boss.mistcrestLakeBoss.miraculousSwordDance matches 1.. run function boss:section/first/mistcrest_lake/miraculous_sword_dance/boss_instance/action_func/skills/sword_dance/_

@@ -42,4 +42,4 @@ scoreboard players reset * Boss.mistcrestLakeBoss.miraculousSwordDance
     scoreboard players set $needHpRatioForJoin Boss.mistcrestLakeBoss.miraculousSwordDance 50
 
 #読み込みの終了
-execute positioned 25000 12 30000 run forceload remove ~-25 ~-25 ~25 ~25
+execute positioned 25000 12 30000 run forceload remove ~-50 ~-50 ~50 ~50

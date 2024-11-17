@@ -2,7 +2,7 @@
 ## function mobs:first_plain/zombies/call
 
 #その場所を常時読み込み(ログアウトされたここがロードされなくなるとキルの処理が出来ない)
-forceload add ~-25 ~-25 ~25 ~25
+forceload add ~-50 ~-50 ~50 ~50
 
 #スポーン時にボスバーを新規作成
 bossbar add boss:story/mistcrestlake.miraculous_sword_dance [{"translate": "RPG.Enemy.Boss.MiraculousSwordDance"}]
