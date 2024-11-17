@@ -11,3 +11,7 @@ scoreboard players set $attackDamage.rainSword.Hit Boss.mistcrestLakeBoss.miracu
 
 scoreboard players set $attackDamage.windLawSword.Rotate Boss.mistcrestLakeBoss.miraculousSwordDance 20
 scoreboard players set $attackDamage.windLawSword.lastHit Boss.mistcrestLakeBoss.miraculousSwordDance 40
+
+scoreboard players set $maxHealth Boss.mistcrestLakeBoss.miraculousSwordDance 1000
+
+scoreboard players set $defence Boss.mistcrestLakeBoss.miraculousSwordDance 0

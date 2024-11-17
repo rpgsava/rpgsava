@@ -24,8 +24,11 @@ data merge entity @s {item:{id:"minecraft:warped_fungus_on_a_stick",count:1b,com
 ride @s mount @e[tag=mistcrestLakeBoss.miraculousSwordDance.rightLeg,tag=!Init,limit=1]
 
 #HPの付与
-scoreboard players set @s Mobs.Health.Max 1000
+scoreboard players operation @s Mobs.Health.Max = $maxHealth Boss.mistcrestLakeBoss.miraculousSwordDance
 scoreboard players operation @s Mobs.Health.Now = @s Mobs.Health.Max
+
+# defenceの設定
+scoreboard players operation @s Mobs.Defence = $defence Boss.mistcrestLakeBoss.miraculousSwordDance
 
 scoreboard players operation $tmp Boss.Health.LoadPlus = @s Mobs.Health.Max
 #回復したhpを追加したプレイヤーに対して保持する
@@ -39,6 +42,7 @@ scoreboard players set $hpRatio Boss.mistcrestLakeBoss.miraculousSwordDance 100
 scoreboard players set $isCommonAttacking Boss.mistcrestLakeBoss.miraculousSwordDance 0
 scoreboard players set $commonMoveTick Boss.mistcrestLakeBoss.miraculousSwordDance 0
 scoreboard players set $noAI Boss.mistcrestLakeBoss.miraculousSwordDance 0
+scoreboard players set $progress Boss.mistcrestLakeBoss.miraculousSwordDance 0
 #人数増加時のHPを設定
 scoreboard players set @s Boss.Health.LoadPlus 1000
 
