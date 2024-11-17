@@ -36,6 +36,7 @@ scoreboard players set $7 Core.Int 7
 scoreboard players set $8 Core.Int 8
 scoreboard players set $9 Core.Int 9
 scoreboard players set $10 Core.Int 10
+scoreboard players set $14 Core.Int 14
 scoreboard players set $16 Core.Int 16
 scoreboard players set $20 Core.Int 20
 scoreboard players set $25 Core.Int 25

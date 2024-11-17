@@ -1,3 +1,4 @@
+say rundeath
 #ボスバーの削除
 bossbar remove boss:story/mistcrestlake.miraculous_sword_dance
 

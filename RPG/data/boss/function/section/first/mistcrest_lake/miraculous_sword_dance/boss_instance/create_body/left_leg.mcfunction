@@ -1,6 +1,8 @@
 #デスポーンしない
 data merge entity @s {PersistenceRequired:True}
 
+# 名前を非表示に
+data merge entity @s {CustomNameVisible:False}
 
 
 #最後にファイルパスを持たせる(後にマクロ対応)

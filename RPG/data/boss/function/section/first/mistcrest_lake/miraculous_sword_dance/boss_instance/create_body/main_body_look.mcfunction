@@ -2,6 +2,8 @@
 data merge entity @s {PersistenceRequired:True}
 data merge storage mobs:entity {CustomName:'[{"translate":"RPG.Enemy.Boss.MiraculousSwordDance"}]'}
 
+# 名前を表示に
+data merge entity @s {CustomNameVisible:True}
 
 #最後にファイルパスを持たせる(後にマクロ対応)
 data merge entity @s {IsBaby:True,CustomNameVisible:True,Tags:["mistcrestLakeBoss.miraculousSwordDance","mistcrestLakeBoss.miraculousSwordDance.aiPart","mistcrestLakeBoss.miraculousSwordDance.mainBody","mistcrestLakeBoss.miraculousSwordDance.bodyDisplay","mistcrestLakeBoss.miraculousSwordDance.Enemy","mistcrestLakeBoss","mistcrestLakeEnemy","sectionFirstEnemy","Enemy","Boss","Mobs.EntityHeight.1.0","section/first/mistcrest_lake/miraculous_sword_dance"]}
@@ -35,6 +37,7 @@ execute store result bossbar boss:story/mistcrestlake.miraculous_sword_dance val
 #hp比率の決定
 scoreboard players set $hpRatio Boss.mistcrestLakeBoss.miraculousSwordDance 100
 scoreboard players set $isCommonAttacking Boss.mistcrestLakeBoss.miraculousSwordDance 0
+scoreboard players set $commonMoveTick Boss.mistcrestLakeBoss.miraculousSwordDance 0
 scoreboard players set $noAI Boss.mistcrestLakeBoss.miraculousSwordDance 0
 #人数増加時のHPを設定
 scoreboard players set @s Boss.Health.LoadPlus 1000
