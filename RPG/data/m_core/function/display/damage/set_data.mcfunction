@@ -4,7 +4,7 @@
     # 表示時間
         data modify entity @s PortalCooldown set value 10
     # # 名前表示
-    #     data modify entity @s CustomNameVisible set value 1b
+        data modify entity @s CustomNameVisible set value 1b
     # 名前=値
         data modify entity @s CustomName set from entity @s Item.components.minecraft:custom_data.display.Name
 # タグ付け
