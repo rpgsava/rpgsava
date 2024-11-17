@@ -21,3 +21,7 @@ scoreboard players operation @s Mobs.Health.Max -= $tmp Players.Boss.AppendHealt
 scoreboard players operation @s Mobs.Health.Now *= @s Mobs.Health.Max
 # 現在hp * 変更後ful / 現在ful
 scoreboard players operation @s Mobs.Health.Now /= $full Players.Boss.AppendHealth
+
+
+# ボスバーのmax値を更新
+execute store result bossbar boss:story/mistcrestlake.miraculous_sword_dance max run scoreboard players get @s Mobs.Health.Max

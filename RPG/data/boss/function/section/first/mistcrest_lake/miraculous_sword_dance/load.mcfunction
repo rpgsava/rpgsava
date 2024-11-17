@@ -7,6 +7,6 @@ execute if score $mistcrestLakeBoss.miraculousSwordDance Boss.IsSpawn = $True Co
 scoreboard players operation $mistcrestLakeBoss.miraculousSwordDance Boss.IsSpawn = $True Core.Bool
 
 #自身にボスバーが見えるようにする
-bossbar set boss:story/mistcrestlake.miraculous_sword_dance players @s
+bossbar set boss:story/mistcrestlake.miraculous_sword_dance players @a[tag=Boss.MistcrestLake.MiraculousSwordDance]
 
 #todo hpが50%以下になってログインして返ってこないパターンを考える
