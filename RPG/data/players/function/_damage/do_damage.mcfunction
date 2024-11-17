@@ -6,7 +6,21 @@ data merge entity @s {HurtByTimestamp:0}
 # サウンドチェック
 execute at @s run function mobs:_sounds/_check
 
-#防御力計算#TODO
+
+# 防御力計算
+# 攻撃力 <- ❈防御/ ( ❈防御力+100) * 攻撃力
+    scoreboard players operation $tmp Mobs.Defence = @s Mobs.Defence
+    scoreboard players operation $tmp+100 Mobs.Defence = @s Mobs.Defence
+    scoreboard players operation $tmp+100 Mobs.Defence += $100 Mobs.Defence
+    # 分子を1000倍して割る
+    scoreboard players operation $tmp Mobs.Defence *= $1000 Mobs.Defence
+    scoreboard players operation $tmp Mobs.Defence /= $tmp+100 Mobs.Defence
+    # 攻撃力に乗算
+    scoreboard players operation $dmg Mobs.Damage *= $tmp Mobs.Defence
+    # 1000で割る
+    scoreboard players operation $dmg Mobs.Damage /= $1000 Mobs.Defence
+
+
 #自身に残ったダメージを与える
     scoreboard players operation $dmg Players.Attack.Damage = @a[tag=Attack.Now,limit=1] Players.Attack.Damage
     #表示
